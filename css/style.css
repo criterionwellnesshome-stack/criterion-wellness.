@@ -30,6 +30,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--color-text-dark);
@@ -103,18 +109,28 @@ header {
 }
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 260px;
+    height: 70px;
+    overflow: hidden;
 }
 
 .logo-img {
-    height: 75px;
-    max-height: 85px;
+    height: 100%;
     width: auto;
+    max-width: 100%;
     object-fit: contain;
     display: block;
     transition: transform 0.3s ease;
@@ -422,44 +438,55 @@ footer {
     font-size: 3rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .philosophy-grid, .product-grid {
         grid-template-columns: 1fr;
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    .logo {
+        max-width: 160px;
+        height: 46px;
     }
 
     .logo-img {
-        height: 65px;
+        height: 100%;
+        max-width: 100%;
     }
 
     .mobile-nav-toggle {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-links {
+        display: flex;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
+        width: 100%;
         background-color: var(--color-white);
         flex-direction: column;
         gap: 0;
         padding: 0;
-        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease, visibility 0.3s ease;
         opacity: 0;
+        visibility: hidden;
         border-top: 1px solid rgba(0,0,0,0.06);
+        z-index: 1050;
     }
 
     .nav-links.active {
-        max-height: 480px;
+        max-height: 500px;
         opacity: 1;
-        padding: 15px 0;
+        visibility: visible;
+        padding: 10px 0;
     }
 
     .nav-links li {
@@ -471,6 +498,8 @@ footer {
         display: block;
         padding: 14px 20px;
         font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--color-primary);
         border-bottom: 1px solid rgba(0,0,0,0.04);
     }
 
