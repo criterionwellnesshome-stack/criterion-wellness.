@@ -9,7 +9,7 @@
    Body: 'Montserrat', sans-serif
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --color-primary: #1F5E3B;
@@ -18,10 +18,10 @@
     --color-white: #FFFFFF;
     --color-black: #000000;
     --color-bg-light: #F9F9F9;
-    --color-text-dark: #333333;
+    --color-text-dark: #222222;
     
-    --font-heading: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+    --font-body: 'Poppins', sans-serif;
 }
 
 * {
@@ -106,9 +106,54 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 12px 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.logo-img {
+    height: 75px;
+    max-height: 85px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1100;
+}
+
+.mobile-nav-toggle .bar {
+    width: 26px;
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-links {
@@ -381,18 +426,86 @@ footer {
     .philosophy-grid, .product-grid {
         grid-template-columns: 1fr;
     }
+    
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+
+    .logo-img {
+        height: 65px;
+    }
+
+    .mobile-nav-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease;
+        opacity: 0;
+        border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .nav-links.active {
+        max-height: 480px;
+        opacity: 1;
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 20px;
+        font-size: 1.05rem;
+        border-bottom: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 600px) {
+    .hero {
+        padding: 80px 20px;
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
     }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
     .footer-grid {
         grid-template-columns: 1fr;
     }

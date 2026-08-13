@@ -8,12 +8,34 @@ async function loadComponent(elementId, filePath) {
         const html = await response.text();
         document.getElementById(elementId).innerHTML = html;
         
-        // If this is the nav, initialize cart count
+        // If this is the nav, initialize cart count and mobile toggle
         if (elementId === 'nav-placeholder') {
             updateCartCount();
+            initMobileNav();
         }
     } catch (error) {
         console.error('Error loading component:', error);
+    }
+}
+
+// Mobile Hamburger Menu Toggle
+function initMobileNav() {
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggleBtn && navLinks) {
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!toggleBtn.contains(e.target) && !navLinks.contains(e.target)) {
+                toggleBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
     }
 }
 
