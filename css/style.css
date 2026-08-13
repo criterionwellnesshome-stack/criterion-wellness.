@@ -5,8 +5,8 @@
    Secondary: #3F7F5A (Soft Green)
    Accent: #8B6A46 (Warm Brown)
    Neutrals: #FFFFFF, #000000
-   Headings: 'Cinzel', serif
-   Body: 'Montserrat', sans-serif
+   Headings: 'Plus Jakarta Sans', sans-serif
+   Body: 'Poppins', sans-serif
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -47,8 +47,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-primary);
     margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-weight: 800;
 }
 
 a {
@@ -72,8 +77,8 @@ a:hover {
     border-radius: 4px;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
     text-align: center;
 }
 
@@ -97,6 +102,7 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Header & Nav */
@@ -106,6 +112,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+}
+
+.top-announcement {
+    background-color: var(--color-accent);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .navbar {
@@ -113,7 +133,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 12px 20px;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
@@ -122,8 +142,9 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    max-width: 260px;
-    height: 70px;
+    height: 85px;
+    max-height: 85px;
+    max-width: 320px;
     overflow: hidden;
 }
 
@@ -132,6 +153,7 @@ header {
     width: auto;
     max-width: 100%;
     object-fit: contain;
+    mix-blend-mode: multiply;
     display: block;
     transition: transform 0.3s ease;
 }
@@ -150,6 +172,8 @@ header {
     flex-direction: column;
     gap: 5px;
     z-index: 1100;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-nav-toggle .bar {
@@ -181,7 +205,7 @@ header {
 
 .nav-links a {
     color: var(--color-text-dark);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -217,7 +241,7 @@ header {
 .hero {
     position: relative;
     background-color: #2a2a2a;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('PLACEHOLDER');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('PLACEHOLDER');
     background-size: cover;
     background-position: center;
     color: var(--color-white);
@@ -235,16 +259,16 @@ header {
 
 .hero h1 {
     color: var(--color-white);
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin-bottom: 24px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 
 .hero p {
     font-size: 1.25rem;
     margin-bottom: 40px;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    font-weight: 400;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .hero-buttons {
@@ -347,7 +371,7 @@ header {
 .product-price {
     font-size: 1.25rem;
     color: var(--color-accent);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -438,7 +462,13 @@ footer {
     font-size: 3rem;
 }
 
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+    }
+
     .philosophy-grid, .product-grid {
         grid-template-columns: 1fr;
     }
@@ -448,8 +478,8 @@ footer {
     }
 
     .logo {
-        max-width: 160px;
-        height: 46px;
+        max-width: 170px;
+        height: 48px;
     }
 
     .logo-img {
@@ -462,49 +492,49 @@ footer {
     }
 
     .nav-links {
-        display: flex;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: var(--color-white);
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-        box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out, opacity 0.3s ease, visibility 0.3s ease;
-        opacity: 0;
-        visibility: hidden;
-        border-top: 1px solid rgba(0,0,0,0.06);
-        z-index: 1050;
+        display: flex !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        background-color: var(--color-white) !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+        padding: 0 !important;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+        max-height: 0 !important;
+        overflow: hidden !important;
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease, visibility 0.3s ease !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        border-top: 1px solid rgba(0,0,0,0.06) !important;
+        z-index: 1050 !important;
     }
 
     .nav-links.active {
-        max-height: 500px;
-        opacity: 1;
-        visibility: visible;
-        padding: 10px 0;
+        max-height: 500px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        padding: 12px 0 !important;
     }
 
     .nav-links li {
-        width: 100%;
-        text-align: center;
+        width: 100% !important;
+        text-align: center !important;
     }
 
     .nav-links a {
-        display: block;
-        padding: 14px 20px;
-        font-size: 1.05rem;
-        font-weight: 600;
-        color: var(--color-primary);
-        border-bottom: 1px solid rgba(0,0,0,0.04);
+        display: block !important;
+        padding: 14px 20px !important;
+        font-size: 1.05rem !important;
+        font-weight: 600 !important;
+        color: var(--color-primary) !important;
+        border-bottom: 1px solid rgba(0,0,0,0.04) !important;
     }
 
     .nav-links a::after {
-        display: none;
+        display: none !important;
     }
 
     .footer-grid {
