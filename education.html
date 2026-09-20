@@ -1,19 +1,266 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Criterion's educational books, structured health courses, clinical webinars, and verified patient recovery journeys.">
     <title>Education & Resources | The Criterion Holistic Wellness Home</title>
-    <link rel="stylesheet" href="css/style.css?v=5.0">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
 </head>
-<body>
+<body class="resources-page">
+
     <!-- Injection point for Navigation -->
     <div id="nav-placeholder"></div>
 
-    <main class="page-section">
-        <div class="container">
-            <h1 class="page-title">Education & Resources</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Explore our books, courses, and educational materials to empower your wellness journey.</p>
+    <main>
+        <!-- RESOURCES HERO -->
+        <header class="resources-page-hero">
+            <div class="container">
+                <h1>Better Information Leads to Better Decisions.</h1>
+                <p>We believe health education should make things clearer, not more confusing. Through publications, structured learning modules, clinical webinars, and verified patient experiences, we share practical knowledge about fertility, botanical medicine, and sustainable wellness.</p>
+
+                <!-- FILTER TABS -->
+                <div class="resources-nav-filter" role="tablist" aria-label="Resource Categories">
+                    <button class="resource-filter-btn active" data-target="all" role="tab" aria-selected="true">All Resources</button>
+                    <button class="resource-filter-btn" data-target="books" role="tab" aria-selected="false">Books & Guides</button>
+                    <button class="resource-filter-btn" data-target="courses" role="tab" aria-selected="false">Courses</button>
+                    <button class="resource-filter-btn" data-target="videos" role="tab" aria-selected="false">Videos & Webinars</button>
+                    <button class="resource-filter-btn" data-target="testimonials" role="tab" aria-selected="false">Patient Stories</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN RESOURCES CONTENT -->
+        <div class="resources-main-wrap">
+            <div class="container">
+
+                <!-- 1. BOOKS & PUBLICATIONS -->
+                <section class="resource-category-section" id="section-books" data-category="books">
+                    <div class="resource-section-header">
+                        <div>
+                            <h2>Books & Publications</h2>
+                            <p>Authoritative clinical guides and patient handbooks developed by our practitioners.</p>
+                        </div>
+                        <span class="badge-status-pill badge-prep">&#9679; In Editorial Preparation</span>
+                    </div>
+
+                    <div class="books-architecture-grid">
+                        <!-- Book 1 -->
+                        <article class="book-card-item">
+                            <div class="book-mockup-cover">
+                                <span class="book-spine-mark">CRITERION CLINICAL SERIES</span>
+                                <div>
+                                    <div class="book-cover-title">Integrative Botanical Medicine & Reproductive Wellness</div>
+                                    <span class="book-cover-author">Criterion Clinical Faculty</span>
+                                </div>
+                                <span style="font-size: 0.7rem; opacity: 0.7;">VOL. I</span>
+                            </div>
+                            <div class="book-details-panel">
+                                <h3>Integrative Botanical Medicine & Reproductive Wellness</h3>
+                                <span class="book-meta-sub">Clinical Companion • Comprehensive Guide</span>
+                                <p>A foundational clinical text bridging traditional West African and adaptogenic herbal therapeutics with modern reproductive diagnostics, semen parameter analysis, and endocrine rhythm restoration.</p>
+                                <div class="book-footer-action">
+                                    <span class="badge-status-pill badge-prep">Publication in Progress</span>
+                                    <span style="font-size: 0.86rem; color: var(--color-text-muted);">Coming Soon</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Book 2 -->
+                        <article class="book-card-item">
+                            <div class="book-mockup-cover alt-brown">
+                                <span class="book-spine-mark">CRITERION PROTOCOLS</span>
+                                <div>
+                                    <div class="book-cover-title">Restoring the Gut Mucosa: Principles of Gastric Healing</div>
+                                    <span class="book-cover-author">Criterion Botanical Lab</span>
+                                </div>
+                                <span style="font-size: 0.7rem; opacity: 0.7;">HANDBOOK</span>
+                            </div>
+                            <div class="book-details-panel">
+                                <h3>Restoring the Gut Mucosa: Principles of Gastric Healing</h3>
+                                <span class="book-meta-sub">Practical Patient Guide • Digestive Health</span>
+                                <p>An in-depth manual examining gastric mucosal protection, natural demulcent buffering agents, microbial balance, and dietary adjustments for chronic peptic irritation and ulcer recovery.</p>
+                                <div class="book-footer-action">
+                                    <span class="badge-status-pill badge-prep">Publication in Progress</span>
+                                    <span style="font-size: 0.86rem; color: var(--color-text-muted);">Coming Soon</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- 2. STRUCTURED LEARNING COURSES -->
+                <section class="resource-category-section" id="section-courses" data-category="courses">
+                    <div class="resource-section-header">
+                        <div>
+                            <h2>Structured Courses & Masterclasses</h2>
+                            <p>Self-paced educational curricula for individuals and couples navigating natural health pathways.</p>
+                        </div>
+                        <span class="badge-status-pill badge-dev">&#9679; Curriculum in Development</span>
+                    </div>
+
+                    <div class="courses-architecture-grid">
+                        <!-- Course 1 -->
+                        <article class="course-card-item">
+                            <div class="course-top-row">
+                                <span class="badge-status-pill badge-dev">Syllabus in Development</span>
+                                <span style="font-size: 0.84rem; font-weight: 700; color: var(--color-primary);">6 Modules • 18 Lessons</span>
+                            </div>
+                            <h3>Foundations of Natural Fertility & Endocrine Balancing</h3>
+                            <p>A comprehensive masterclass explaining male and female reproductive biology, identifying latent microbial burdens, synchronizing protocols, and tracking true biological progress.</p>
+                            
+                            <div class="course-modules-preview">
+                                <h4>Sample Curriculum Overview</h4>
+                                <ul class="course-modules-list">
+                                    <li>Module 1: Biology of the 90-Day Spermatogenic Cycle</li>
+                                    <li>Module 2: Female Ovarian Rhythms & Endocrine Nutrition</li>
+                                    <li>Module 3: Coordinated Couple Care & Preconception Timelines</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 16px;">
+                                <span style="font-size: 0.88rem; color: var(--color-text-muted);">Enrollment opens shortly</span>
+                                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.82rem;">Inquire on Availability</a>
+                            </div>
+                        </article>
+
+                        <!-- Course 2 -->
+                        <article class="course-card-item">
+                            <div class="course-top-row">
+                                <span class="badge-status-pill badge-dev">Syllabus in Development</span>
+                                <span style="font-size: 0.84rem; font-weight: 700; color: var(--color-primary);">4 Modules • Practical Toolkit</span>
+                            </div>
+                            <h3>Herbal Therapeutics for Gastrointestinal Health & Ulcer Care</h3>
+                            <p>An accessible instructional program designed to empower patients with knowledge regarding stomach acid balance, botanical demulcents, dietary triggers, and long-term gut recovery.</p>
+                            
+                            <div class="course-modules-preview">
+                                <h4>Sample Curriculum Overview</h4>
+                                <ul class="course-modules-list">
+                                    <li>Module 1: The Gastric Barrier & Pathophysiology of Irritation</li>
+                                    <li>Module 2: Herbal Demulcents & How Botanical Powder Works</li>
+                                    <li>Module 3: Sustained Relief & Nutritional Relapse Prevention</li>
+                                </ul>
+                            </div>
+
+                            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 16px;">
+                                <span style="font-size: 0.88rem; color: var(--color-text-muted);">Enrollment opens shortly</span>
+                                <a href="contact.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.82rem;">Inquire on Availability</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- 3. EDUCATIONAL VIDEOS & WEBINARS -->
+                <section class="resource-category-section" id="section-videos" data-category="videos">
+                    <div class="resource-section-header">
+                        <div>
+                            <h2>Educational Videos & Clinical Webinars</h2>
+                            <p>Visual explanations and frank discussions on key wellness topics, tests, and protocols.</p>
+                        </div>
+                        <span class="badge-status-pill badge-prod">&#9679; Production in Progress</span>
+                    </div>
+
+                    <div class="videos-architecture-grid">
+                        <!-- Video 1 -->
+                        <article class="video-card-item">
+                            <div class="video-thumbnail-frame">
+                                <img src="images/products-hero-botanical.jpg" alt="Understanding Semen Analysis Video" loading="lazy">
+                                <div class="video-play-overlay" aria-label="Play video">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                                <span class="video-duration-tag">34:15</span>
+                            </div>
+                            <div class="video-details-panel">
+                                <h3>Understanding Semen Analysis: A Frank Conversation</h3>
+                                <p>A detailed practitioner walkthrough demystifying sperm concentration, progressive motility, morphology, and seminal volume without unnecessary clinical anxiety.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(0,0,0,0.06);">
+                                    <span class="badge-status-pill badge-prod">Coming Soon</span>
+                                    <span style="font-size: 0.84rem; color: var(--color-accent); font-weight: 600;">Male Fertility Series</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Video 2 -->
+                        <article class="video-card-item">
+                            <div class="video-thumbnail-frame">
+                                <img src="images/hero-fertility-wellness.jpg" alt="Hormonal Rhythms & Ovulatory Cycles Video" loading="lazy">
+                                <div class="video-play-overlay" aria-label="Play video">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                                <span class="video-duration-tag">28:40</span>
+                            </div>
+                            <div class="video-details-panel">
+                                <h3>Hormonal Rhythms & Ovulatory Cycles: Listening to Your Body</h3>
+                                <p>Explaining luteal phase sufficiency, cervical fluid markers, and how targeted botanical formulations like Vitex support predictable monthly endocrine harmony.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 14px; border-top: 1px solid rgba(0,0,0,0.06);">
+                                    <span class="badge-status-pill badge-prod">Coming Soon</span>
+                                    <span style="font-size: 0.84rem; color: var(--color-accent); font-weight: 600;">Female Wellness Series</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- 4. PATIENT STORIES & EXPERIENCES -->
+                <section class="resource-category-section" id="section-testimonials" data-category="testimonials">
+                    <div class="resource-section-header">
+                        <div>
+                            <h2>Patient Stories & Verified Experiences</h2>
+                            <p>Real stories from individuals and couples who trusted our deliberate, truth-first approach.</p>
+                        </div>
+                        <span class="badge-status-pill badge-verified">&#10003; Verified Experiences</span>
+                    </div>
+
+                    <div class="testimonials-architecture-grid">
+                        <!-- Testimonial 1 -->
+                        <article class="testimonial-card-item tone-ivory">
+                            <div class="testimonial-quote-body">
+                                "We spent two years moving between contradictory opinions and expensive tests before Criterion explained that sperm takes 90 days to develop. Following the preconception protocol with patience made all the difference."
+                            </div>
+                            <div class="testimonial-patient-meta">
+                                <div>
+                                    <div class="testimonial-author-name">Mr. & Mrs. O. A.</div>
+                                    <span style="font-size: 0.78rem; color: var(--color-text-muted);">Lagos, Nigeria</span>
+                                </div>
+                                <span class="testimonial-concern-tag">Preconception Protocol</span>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 2 -->
+                        <article class="testimonial-card-item tone-sage">
+                            <div class="testimonial-quote-body">
+                                "I suffered from chronic acidity and severe ulcer discomfort for over three years. Taking Criterion Life Ulcer-Care consistently in warm water gave me relief within weeks without suppressing my digestion."
+                            </div>
+                            <div class="testimonial-patient-meta">
+                                <div>
+                                    <div class="testimonial-author-name">T. K.</div>
+                                    <span style="font-size: 0.78rem; color: var(--color-text-muted);">Port Harcourt, Nigeria</span>
+                                </div>
+                                <span class="testimonial-concern-tag">Gastric Mucosal Care</span>
+                            </div>
+                        </article>
+
+                        <!-- Testimonial 3 -->
+                        <article class="testimonial-card-item tone-linen">
+                            <div class="testimonial-quote-body">
+                                "The clarity was what stood out most. No exaggerated claims, just honest education about cycle phases and herbal patience. My cycles are now regular for the first time in four years."
+                            </div>
+                            <div class="testimonial-patient-meta">
+                                <div>
+                                    <div class="testimonial-author-name">B. E.</div>
+                                    <span style="font-size: 0.78rem; color: var(--color-text-muted);">Abuja, Nigeria</span>
+                                </div>
+                                <span class="testimonial-concern-tag">Female Reproductive Care</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+            </div>
         </div>
     </main>
 
@@ -21,6 +268,29 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="js/components.js?v=5.0"></script>
+    <script src="js/components.js?v=9.0"></script>
+    <script>
+        // Resource Filter Tab Interaction
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.resource-filter-btn');
+            const sections = document.querySelectorAll('.resource-category-section');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const target = btn.getAttribute('data-target');
+                    sections.forEach(sec => {
+                        if (target === 'all' || sec.getAttribute('data-category') === target) {
+                            sec.style.display = 'block';
+                        } else {
+                            sec.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>

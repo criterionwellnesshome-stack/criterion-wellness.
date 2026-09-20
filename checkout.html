@@ -1,19 +1,58 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provide customer and delivery details, select payment method, and complete your Criterion order request.">
     <title>Checkout | The Criterion Holistic Wellness Home</title>
-    <link rel="stylesheet" href="css/style.css?v=5.0">
+    <link rel="stylesheet" href="css/style.css?v=8.0">
 </head>
-<body>
+<body class="checkout-page">
+
     <!-- Injection point for Navigation -->
     <div id="nav-placeholder"></div>
 
-    <main class="page-section">
+    <main class="page-main checkout-main">
         <div class="container">
-            <h1 class="page-title">Checkout</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Complete your purchase securely via Paystack.</p>
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="products.html">Products</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="cart.html">Cart</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span class="breadcrumb-current">Checkout</span>
+            </nav>
+
+            <header class="checkout-header">
+                <span class="section-tag">Order Placement</span>
+                <h1 class="checkout-title">Complete Your Order</h1>
+                <p class="checkout-subtitle">Provide your delivery information and select your preferred payment pathway.</p>
+                
+                <!-- Progress Stepper -->
+                <div class="checkout-stepper" aria-label="Checkout Progress">
+                    <div class="step-node completed">
+                        <span class="step-num">&#10003;</span>
+                        <span class="step-label">Cart</span>
+                    </div>
+                    <div class="step-line active"></div>
+                    <div class="step-node current">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Delivery & Payment</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-node">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Confirmation</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Checkout Root -->
+            <div id="checkout-root">
+                <!-- Populated dynamically by js/checkout.js -->
+            </div>
         </div>
     </main>
 
@@ -21,6 +60,8 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="js/components.js?v=5.0"></script>
+    <script src="js/components.js?v=8.0"></script>
+    <script src="js/catalog-data.js?v=8.0"></script>
+    <script src="js/checkout.js?v=8.0"></script>
 </body>
 </html>

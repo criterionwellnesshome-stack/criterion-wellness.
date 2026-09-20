@@ -1,19 +1,67 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a personal clinical consultation with The Criterion Holistic Wellness Home practitioners for fertility care, reproductive health, and natural remedies.">
     <title>Book a Consultation | The Criterion Holistic Wellness Home</title>
-    <link rel="stylesheet" href="css/style.css?v=5.0">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
 </head>
-<body>
+<body class="consultation-page">
+
     <!-- Injection point for Navigation -->
     <div id="nav-placeholder"></div>
 
-    <main class="page-section">
+    <main class="page-main consult-main">
         <div class="container">
-            <h1 class="page-title">Book a Consultation</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Schedule a personalized assessment with our holistic wellness experts.</p>
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span class="breadcrumb-current">Book a Consultation</span>
+            </nav>
+
+            <header class="consult-header text-center">
+                <h1 class="consult-title">Request a Consultation</h1>
+                <p class="consult-subtitle">
+                    Share your health focus with our clinical herbal team. We will review your inquiry with clinical discretion and coordinate your consultation.
+                </p>
+
+                <!-- Multi-Step Progress Bar -->
+                <div class="consult-stepper" id="consult-stepper" aria-label="Consultation Steps">
+                    <div class="consult-step-node current" data-step="1">
+                        <span class="step-num">1</span>
+                        <span class="step-label">Concern</span>
+                    </div>
+                    <div class="consult-step-line" data-line="1"></div>
+                    <div class="consult-step-node" data-step="2">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Details</span>
+                    </div>
+                    <div class="consult-step-line" data-line="2"></div>
+                    <div class="consult-step-node" data-step="3">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Documents</span>
+                    </div>
+                    <div class="consult-step-line" data-line="3"></div>
+                    <div class="consult-step-node" data-step="4">
+                        <span class="step-num">4</span>
+                        <span class="step-label">Method</span>
+                    </div>
+                    <div class="consult-step-line" data-line="4"></div>
+                    <div class="consult-step-node" data-step="5">
+                        <span class="step-num">5</span>
+                        <span class="step-label">Summary</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Consultation Flow Container -->
+            <div class="consult-flow-container">
+                <div id="consult-flow-root">
+                    <!-- Populated dynamically by js/consultation.js -->
+                </div>
+            </div>
         </div>
     </main>
 
@@ -21,6 +69,7 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="js/components.js?v=5.0"></script>
+    <script src="js/components.js?v=9.0"></script>
+    <script src="js/consultation.js?v=9.0"></script>
 </body>
 </html>

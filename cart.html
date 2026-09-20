@@ -1,19 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your selected Criterion herbal remedies, adjust quantities, and proceed to secure checkout.">
     <title>Shopping Cart | The Criterion Holistic Wellness Home</title>
-    <link rel="stylesheet" href="css/style.css?v=5.0">
+    <link rel="stylesheet" href="css/style.css?v=8.0">
 </head>
-<body>
+<body class="cart-page">
+
     <!-- Injection point for Navigation -->
     <div id="nav-placeholder"></div>
 
-    <main class="page-section">
+    <main class="page-main cart-main">
         <div class="container">
-            <h1 class="page-title">Shopping Cart</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Review your selected items before proceeding to checkout.</p>
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="products.html">Products</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span class="breadcrumb-current">Shopping Cart</span>
+            </nav>
+
+            <header class="cart-header">
+                <span class="section-tag">Order Review</span>
+                <h1 class="cart-title">Your Shopping Cart</h1>
+                <p class="cart-subtitle">Review your herbal remedies before proceeding to delivery and payment selection.</p>
+            </header>
+
+            <!-- Dynamic Cart Content Root -->
+            <div id="cart-root">
+                <!-- Injected dynamically by js/cart.js -->
+            </div>
         </div>
     </main>
 
@@ -21,6 +40,8 @@
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
-    <script src="js/components.js?v=5.0"></script>
+    <script src="js/components.js?v=8.0"></script>
+    <script src="js/catalog-data.js?v=8.0"></script>
+    <script src="js/cart.js?v=8.0"></script>
 </body>
 </html>

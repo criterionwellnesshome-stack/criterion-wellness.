@@ -1,4 +1,4 @@
-// Function to load external HTML components
+﻿// Function to load external HTML components
 async function loadComponent(elementId, filePath) {
     try {
         const response = await fetch(filePath);
@@ -6,16 +6,34 @@ async function loadComponent(elementId, filePath) {
             throw new Error(`Failed to load ${filePath}: ${response.statusText}`);
         }
         const html = await response.text();
-        document.getElementById(elementId).innerHTML = html;
+        const el = document.getElementById(elementId);
+        if (el) {
+            el.innerHTML = html;
+        }
         
-        // If this is the nav, initialize cart count and mobile toggle
+        // If this is the nav, initialize cart count, active link, and mobile toggle
         if (elementId === 'nav-placeholder') {
             updateCartCount();
             initMobileNav();
+            setActiveNavLink();
         }
     } catch (error) {
         console.error('Error loading component:', error);
     }
+}
+
+// Active Nav Link Highlighter
+function setActiveNavLink() {
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPath || (currentPath === '' && href === 'index.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
 }
 
 // Mobile Hamburger Menu Toggle
@@ -39,18 +57,17 @@ function initMobileNav() {
     }
 }
 
-// Dummy cart count function (to be expanded later)
+// Cart Count Synchronizer
 function updateCartCount() {
     const cartCountElement = document.getElementById('cart-count');
     if (cartCountElement) {
         const cart = JSON.parse(localStorage.getItem('criterion_cart')) || [];
-        cartCountElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+        cartCountElement.textContent = cart.reduce((total, item) => total + (item.quantity || 1), 0);
     }
 }
 
 // Load components when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    // Assuming pages are at the root level relative to components/
     loadComponent('nav-placeholder', 'components/nav.html');
     loadComponent('footer-placeholder', 'components/footer.html');
 });
