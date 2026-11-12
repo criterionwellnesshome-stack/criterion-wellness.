@@ -1,4 +1,4 @@
-﻿// The Criterion Holistic Wellness Home — Product Detail Page Controller
+// The Criterion Holistic Wellness Home — Product Detail Page Controller
 
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
@@ -195,19 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    // 04. ACTIVE BOTANICAL INGREDIENTS
-    const ingredientsTableBody = document.getElementById('detail-ingredients-tbody');
-    if (ingredientsTableBody && product.ingredients && product.ingredients.length > 0) {
-        ingredientsTableBody.innerHTML = product.ingredients.map(ing => `
-            <tr>
-                <td class="td-ingredient-name">${ing.name}</td>
-                <td class="td-ingredient-ratio">${ing.percentage || '—'}</td>
-                <td class="td-ingredient-role">${ing.role || 'Active botanical constituent.'}</td>
-            </tr>
-        `).join('');
-    }
-
-    // 05. HOW TO USE
+    // 04. HOW TO USE
     const usageRecommendedEl = document.getElementById('detail-usage-recommended');
     if (usageRecommendedEl && product.usage) {
         usageRecommendedEl.textContent = product.usage.recommended || 'Take as directed.';

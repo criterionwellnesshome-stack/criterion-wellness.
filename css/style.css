@@ -200,12 +200,11 @@ header {
 }
 
 .logo-img {
-    height: 58px;
-    max-height: 58px;
+    height: 48px;
+    max-height: 52px;
     width: auto;
-    max-width: 250px;
+    max-width: 270px;
     object-fit: contain;
-    mix-blend-mode: multiply;
     display: block;
     transition: transform 0.25s ease;
 }
@@ -344,25 +343,59 @@ header {
    1. Hero Campaign Section (Split Composition + Ambient Motion)
    ========================================================================== */
 
+/* Hero Campaign Section (Full Bleed Integrated Visual) */
 .hero-campaign-section {
     position: relative;
     background-color: #FAF8F5;
     color: var(--color-text-dark);
-    padding: 55px 24px 60px 24px;
+    min-height: 520px;
     display: flex;
     align-items: center;
+    overflow: hidden;
     border-bottom: 1px solid rgba(122, 90, 66, 0.1);
 }
 
-.hero-campaign-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    gap: 48px;
-    align-items: center;
+.hero-full-backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-backdrop-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 62%;
+    height: 100%;
+    background-image: url('../images/hero-fertility-botanical.jpg?v=2');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.75) 24%, #000000 45%, #000000 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.75) 24%, #000000 45%, #000000 100%);
+}
+
+.hero-backdrop-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #FAF8F5 0%, #FAF8F5 36%, rgba(250, 248, 245, 0.88) 46%, rgba(250, 248, 245, 0) 62%);
+    pointer-events: none;
+}
+
+.hero-campaign-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 60px;
 }
 
 .hero-editorial-left {
-    max-width: 600px;
+    max-width: 540px;
 }
 
 /* Sequential Animated Words Showcase (PEACE -> JOY -> VITALITY -> FOR YOU) */
@@ -461,122 +494,7 @@ header {
     justify-content: center;
 }
 
-/* Ambient Motion Living Organic Canvas Frame */
-.hero-ambient-motion-frame {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    aspect-ratio: 4 / 3.2;
-    border-radius: 16px;
-    overflow: hidden;
-    background: radial-gradient(circle at 50% 45%, #1e4b37 0%, #122e22 70%, #0d2219 100%);
-    box-shadow: 0 14px 36px rgba(18, 44, 33, 0.18);
-    border: 1px solid rgba(122, 90, 66, 0.22);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero-ambient-canvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.hero-ambient-glow-layer {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(79, 138, 91, 0.22) 0%, rgba(122, 90, 66, 0.12) 50%, transparent 80%);
-    pointer-events: none;
-    z-index: 2;
-    animation: ambientGlowPulse 8s ease-in-out infinite alternate;
-}
-
-@keyframes ambientGlowPulse {
-    0% { opacity: 0.6; transform: scale(0.95); }
-    100% { opacity: 1; transform: scale(1.08); }
-}
-
-.hero-ambient-centerpiece {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ambient-pulse-ring {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-}
-
-.ambient-pulse-ring.ring-outer {
-    width: 140px;
-    height: 140px;
-    border: 1px solid rgba(79, 138, 91, 0.35);
-    animation: ringBreathe 6s ease-in-out infinite alternate;
-}
-
-.ambient-pulse-ring.ring-inner {
-    width: 98px;
-    height: 98px;
-    border: 1px solid rgba(184, 134, 11, 0.35);
-    animation: ringBreathe 4.5s ease-in-out infinite alternate-reverse;
-}
-
-@keyframes ringBreathe {
-    0% { transform: scale(0.92); opacity: 0.4; }
-    100% { transform: scale(1.12); opacity: 0.85; }
-}
-
-.ambient-botanical-core {
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    background: rgba(31, 77, 58, 0.75);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1.5px solid rgba(246, 242, 232, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-ivory);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28), 0 0 28px rgba(79, 138, 91, 0.32);
-    animation: coreFloat 5s ease-in-out infinite alternate;
-}
-
-@keyframes coreFloat {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-5px); }
-}
-
-.hero-ambient-caption {
-    position: absolute;
-    bottom: 14px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 4;
-}
-
-.ambient-caption-tag {
-    font-family: var(--font-heading);
-    font-size: 0.74rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--color-ivory);
-    background: rgba(16, 42, 31, 0.75);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 5px 14px;
-    border-radius: 20px;
-    border: 1px solid rgba(246, 242, 232, 0.2);
-    white-space: nowrap;
-}
 
 @media (prefers-reduced-motion: reduce) {
     .hero-text-sequence-stage {
@@ -1695,9 +1613,10 @@ footer {
         margin-bottom: 24px;
     }
 
-    .hero-ambient-motion-frame {
-        max-width: 100%;
-        aspect-ratio: 16 / 10;
+    .hero-visual-img {
+        max-height: 380px;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 6%, #000000 18%, #000000 100%);
+        mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 6%, #000000 18%, #000000 100%);
     }
 
     .section-heading h2 {
@@ -3580,6 +3499,33 @@ footer {
    MOBILE & RESPONSIVE BREAKPOINTS (PHASE 3)
    ========================================================================== */
 @media (max-width: 992px) {
+    .hero-campaign-section {
+        min-height: auto;
+        display: block;
+    }
+
+    .hero-full-backdrop {
+        position: relative;
+        height: 380px;
+        width: 100%;
+    }
+
+    .hero-backdrop-image {
+        width: 100%;
+        background-position: center center;
+        -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 8%, #000000 20%, #000000 100%);
+        mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 8%, #000000 20%, #000000 100%);
+    }
+
+    .hero-backdrop-gradient {
+        display: none;
+    }
+
+    .hero-campaign-content {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
     .cart-layout-grid, .checkout-layout-grid {
         grid-template-columns: 1fr;
         gap: 28px;
