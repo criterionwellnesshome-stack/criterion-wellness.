@@ -50,8 +50,8 @@ The form in the pasted block is a **mock**: it only shows a thank-you message an
 - [ ] **Mock testimonials** (4, marked `MOCK TESTIMONIAL` in the code): replace with real, consented ones, or delete the section.
 - [ ] **WhatsApp number**: replace `+234 800 000 0000`.
 - [ ] **NAFDAC No** (hero table, FAQ, footer): `[TO BE ADDED]`.
-- [ ] **Ingredients**: `[TO BE ADDED]` (section "What's in the cup" and FAQ). *The pack currently names "Olax subscorpioidea, Gongronema latifolium and other well established herbal formulas", while our research said Dongoyaro and Negro pepper. Resolve which is correct.*
-- [ ] **Directions**: confirm "once a day" vs "morning and night" (the pack says both).
+- [ ] **Ingredients**: the page now shows the two herbs printed on the pack. Add the full herb list (the pack says "other well established herbal formulas") in the "What's in the cup" section and FAQ.
+- [ ] **Directions**: the pack back says "morning and night", the front says "Once a Day". Confirm, then fix the page, the pack and the price lines.
 - [ ] **Delivery fee, delivery time, pay on delivery, refund policy**: placeholders.
 - [ ] **Logo**: add the Criterion Herbaceuticals logo (the repo's logo says "Holistic Wellness Home").
 - [ ] **Pack photos**: the pack is an AI-style mock-up. Use real photos.

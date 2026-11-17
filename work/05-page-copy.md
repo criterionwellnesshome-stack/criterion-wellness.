@@ -1,4 +1,4 @@
-# 05. Page copy: Pile Terminator Tea (MOCK / TEST version)
+# 05. Page copy: Pile Terminator Tea (MOCK / TEST version) [updated for source priority: pack facts per 00-pack-facts.md]
 Per your instruction, this copy goes straight to build without a pause. Edit this file or the HTML directly. **[BRACKETS] = placeholder to be confirmed.** Mock testimonials are marked and are not real.
 
 ## 0. Test bar (visible only in test mode)
@@ -33,14 +33,13 @@ Table: What it is: Pile Terminator Tea, herbal tea bags | How much: 3 g per teab
 Image: pack back panel ("This is the back of the pack. Read it before you buy.").
 
 ## 5. What's in the cup
-Placeholder box: **Ingredients: [TO BE ADDED. List each herb as printed on the label]**
-Note: We will list every herb by name. No mystery powder.
-*What it is made to do (label wording, softened):* made to help ease pain when passing stool; soothe itching and burning; help reduce swelling and irritation; keep you comfortable sitting, walking and working; help you feel lighter and more at ease; support smoother, easier bowel movements.
+**What it contains (as printed on the pack):** herbs like Olax subscorpioidea, Gongronema latifolium and other well established herbal formulas, to help soothe irritated anal tissue. Full herb list: [TO BE ADDED, the pack does not list the "other formulas"].
+*What it is made to do (pack benefit list, softened):* made to help ease pain when passing stool; soothe itching and burning; help reduce swelling and irritation; keep you comfortable sitting, walking and working; help you feel lighter and more at ease; support smoother, easier bowel movements.
+*Left out on purpose:* the pack's "improve blood flow and reduce inflammation within the gastrointestinal tract" line.
 
-## 6. How to use (from the pack)
-1. Put 1 teabag in a kettle. 2. Add 200 ml of water and boil for 5 minutes. 3. Leave it to cool. 4. Drink it [CONFIRM: once a day, or morning and night] before food.
-Store in a cool, dry place away from direct sunlight. Each pack is for one person.
-*(The pack front says "once a day" and the back says "morning and night". Please confirm which.)*
+## 6. How to use (pack back-panel wording)
+1. Put a teabag in a kettle. 2. Add 200 ml of water and boil for 5 minutes. 3. Leave to cool. 4. Take it morning and night, before food. [CONFIRM: the pack front says "Once a Day"]
+Store in a cool, dry place away from direct sunlight. One pack: 30 teabags, 3 g each, for one person.
 
 ## 7. What to expect, honestly
 Everyone is different, so we do not promise a timeline. We suggest using a full pack (30 days), and we will check in with you after the first week to ask how you are doing. Tell us what you notice.
@@ -52,8 +51,8 @@ For adults living with piles. **Message us first if** you are pregnant or breast
 Four sample testimonials, e.g. "Mr. Tunde A., Lagos", "Mrs. Ngozi E., Enugu", "Mr. Ibrahim S., Kano", "Ms. Amaka O., Abuja". Tone: relief, comfort, privacy. **No cure or guarantee language.**
 
 ## 10. Choose your pack
-- **1-month pack: ₦15,000** (30 teabags, about ₦500 a day)
-- **3-month pack: ₦36,000** (3 packs at ₦12,000 each, about ₦400 a day, **save ₦9,000**). *Best value* (recommended)
+- **1-month pack: ₦15,000** (30 teabags)
+- **3-month pack: ₦36,000** (3 packs at ₦12,000 each, **save ₦9,000**). *Best value* (recommended)
 - Pay on delivery [CONFIRM] | Delivery fee: [TO BE CONFIRMED] | Delivery time: [TO BE CONFIRMED] | States: all 36 + FCT
 
 ## 11. Our promise
@@ -70,4 +69,4 @@ Package (3-month pre-selected) | Full name | Phone number | State | Delivery add
 Thank-you: "Thank you, [name]. We will message you shortly to confirm your order." + WhatsApp button.
 
 ## 15. Footer
-Criterion Herbaceuticals | Tel +234 816 455 3746, +234 904 268 9849 | NAFDAC No: [TO BE ADDED] | Batch CH592WH, MFD 18 Nov 2026, EXP 17 Nov 2028 (as printed on the sample pack) | Disclaimer: This product is a herbal supplement and is not intended to diagnose, treat, cure or prevent any disease. Results vary. See a doctor for heavy or persistent bleeding.
+Criterion Herbaceuticals | Tel +234 816 455 3746, +234 904 268 9849 | NAFDAC No: [TO BE ADDED] | Batch CH592WH, MFD 18 Nov 2026, EXP 17 Nov 2028 (as printed on the pack) | Disclaimer: This product is a herbal supplement and is not intended to diagnose, treat, cure or prevent any disease. Results vary. See a doctor for heavy or persistent bleeding.

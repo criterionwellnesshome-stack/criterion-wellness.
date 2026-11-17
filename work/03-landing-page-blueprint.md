@@ -106,3 +106,6 @@ Brand: deep forest green #1F4D3A, botanical green #4F8A5B, earth brown #7A5A42, 
 - **Tracking:** no Pixel ID. A comment marks the Lead event; the guide says to add the Pixel in systeme.io's header-code settings.
 - **Ingredients and NAFDAC:** placeholders. **The pack back names "Olax subscorpioidea, Gongronema latifolium"**, which conflicts with the research (Dongoyaro, Negro pepper). Not used on the page until resolved.
 - **Page order built:** hero, not alone, symptom check, label you can read, what's in the cup, how to use + honest expectation, ask us first, testimonials (mock), offer, promise, FAQ + see-a-doctor, form, footer (about 13 mobile screens).
+
+## 11. Source-priority update
+Pack = source of truth for product facts (see `00-pack-facts.md`, which also holds the Conflicts & notes). Our avatar/research documents = source for everything else. The page now uses the pack's name, herbs and directions; the 'per day' price lines were removed until dosage is confirmed.
