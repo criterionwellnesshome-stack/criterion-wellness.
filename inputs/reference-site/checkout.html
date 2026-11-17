@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Provide customer and delivery details, select payment method, and complete your Criterion order request.">
+    <title>Checkout | The Criterion Holistic Wellness Home</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
+</head>
+<body class="checkout-page">
+
+    <!-- Injection point for Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <main class="page-main checkout-main">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="products.html">Products</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="cart.html">Cart</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span class="breadcrumb-current">Checkout</span>
+            </nav>
+
+            <header class="checkout-header">
+                <span class="section-tag">Order Placement</span>
+                <h1 class="checkout-title">Complete Your Order</h1>
+                <p class="checkout-subtitle">Provide your delivery information and select your preferred payment pathway.</p>
+                
+                <!-- Progress Stepper -->
+                <div class="checkout-stepper" aria-label="Checkout Progress">
+                    <div class="step-node completed">
+                        <span class="step-num">&#10003;</span>
+                        <span class="step-label">Cart</span>
+                    </div>
+                    <div class="step-line active"></div>
+                    <div class="step-node current">
+                        <span class="step-num">2</span>
+                        <span class="step-label">Delivery & Payment</span>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step-node">
+                        <span class="step-num">3</span>
+                        <span class="step-label">Confirmation</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Checkout Root -->
+            <div id="checkout-root">
+                <!-- Populated dynamically by js/checkout.js -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Injection point for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js?v=8.0"></script>
+    <script src="js/catalog-data.js?v=8.0"></script>
+    <script src="js/checkout.js?v=8.0"></script>
+</body>
+</html>

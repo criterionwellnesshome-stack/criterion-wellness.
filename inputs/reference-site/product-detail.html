@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View product formulation, usage instructions, and quality details for Criterion natural herbal solutions.">
+    <title>Product Details | The Criterion Holistic Wellness Home</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
+</head>
+<body class="product-page">
+
+    <!-- Injection point for Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <main class="product-detail-main">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <a href="products.html">Products</a>
+                <span class="breadcrumb-sep">&gt;</span>
+                <span id="breadcrumb-product-name" class="breadcrumb-current">Product Details</span>
+            </nav>
+
+            <!-- 01. PRODUCT HERO (GALLERY + PURCHASE PANEL) -->
+            <section class="product-hero-layout">
+                <!-- Left: Product Gallery -->
+                <div class="product-gallery-component">
+                    <div class="gallery-main-frame">
+                        <span class="detail-badge" id="detail-badge">Natural Formulation</span>
+                        <img id="gallery-main-image" src="" alt="Product Photo">
+                    </div>
+                    <div class="gallery-thumbs-row" id="gallery-thumbs" aria-label="Product image thumbnails">
+                        <!-- Up to 3 thumbnails injected dynamically -->
+                    </div>
+                </div>
+
+                <!-- Right: Product Information & Purchase Action -->
+                <div class="product-summary-panel">
+                    <span class="detail-category-tag" id="detail-category">Natural Wellness</span>
+                    <h1 class="detail-product-title" id="detail-title">Loading Product...</h1>
+                    <p class="detail-positioning-text" id="detail-positioning">Loading positioning...</p>
+
+                    <div class="detail-pricing-box">
+                        <span class="detail-price-figure" id="detail-price">&#8358;0</span>
+                        <div class="detail-meta-tags">
+                            <span class="detail-pack-tag" id="detail-pack-size">Standard Pack</span>
+                            <span class="detail-availability-badge in-stock" id="detail-availability">In Stock</span>
+                        </div>
+                    </div>
+
+                    <!-- Differentiated Purchase Action (Add to Cart vs Book Consultation) -->
+                    <div id="detail-purchase-action-container">
+                        <!-- Populated by js/product-detail.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 02. ABOUT THIS FORMULATION -->
+            <section class="product-narrative-section">
+                <div class="narrative-card">
+                    <h2>About This Formulation</h2>
+                    <p id="detail-about-text">Loading formulation details...</p>
+                </div>
+            </section>
+
+            <!-- 03. WHAT IT IS DESIGNED TO SUPPORT -->
+            <section class="product-narrative-section">
+                <div class="narrative-card">
+                    <h2>What It Is Designed to Support</h2>
+                    <ul class="support-areas-list" id="detail-support-list">
+                        <!-- Populated by JS -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 04. HOW TO USE -->
+            <section class="product-narrative-section">
+                <div class="narrative-card">
+                    <h2>How to Use</h2>
+                    <div class="usage-block">
+                        <p><strong>Recommended Use:</strong> <span id="detail-usage-recommended">Loading...</span></p>
+                        <p id="detail-usage-instructions" style="color: var(--color-text-muted); margin-top: 8px;"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 06. PRODUCT INFORMATION -->
+            <section class="product-narrative-section">
+                <div class="narrative-card">
+                    <h2>Product Information</h2>
+                    <div class="product-facts-grid" id="detail-product-info-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 07. QUALITY & PRODUCT INFORMATION (Expandable, only shows approved fields) -->
+            <section class="product-narrative-section" id="detail-quality-section">
+                <div class="narrative-card">
+                    <h2>Quality & Product Information</h2>
+                    <div class="quality-info-box" id="detail-quality-content">
+                        <!-- Populated by JS only if actual information exists -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 08. IMPORTANT INFORMATION -->
+            <section class="product-narrative-section">
+                <div class="narrative-card important-info-card">
+                    <h2>Important Information</h2>
+                    <div class="important-info-content" id="detail-important-content">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 09. FREQUENTLY ASKED QUESTIONS -->
+            <section class="product-narrative-section">
+                <div class="narrative-card">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-accordion-list" id="detail-faq-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. NEED HELP CHOOSING? CTA -->
+            <section class="product-narrative-section">
+                <div class="need-help-card">
+                    <h2>Not Sure Which Product Is Right for You?</h2>
+                    <p>If you're unsure which Criterion Life product is appropriate for your needs, you can speak with our team before making a decision.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="consultation.html" class="btn btn-secondary">Book a Consultation</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 11. RELATED PRODUCTS -->
+            <section class="product-narrative-section" id="detail-related-section">
+                <div class="section-heading text-left" style="margin-bottom: 30px;">
+                    <span class="section-tag">Recommendations</span>
+                    <h2>You May Also Explore</h2>
+                    <p>Complementary formulations designed to work synergistically.</p>
+                </div>
+                <div class="product-card-grid" id="detail-related-grid">
+                    <!-- Populated by JS using reusable ProductCard component -->
+                </div>
+            </section>
+
+            <!-- Return to Products Link -->
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+                <a href="products.html" class="btn btn-outline">&larr; Back to Full Product Catalog</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Injection point for Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js?v=9.0"></script>
+    <script src="js/catalog-data.js?v=9.0"></script>
+    <script src="js/products.js?v=9.0"></script>
+    <script src="js/product-detail.js?v=9.0"></script>
+</body>
+</html>
