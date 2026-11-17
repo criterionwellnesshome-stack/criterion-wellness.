@@ -114,14 +114,48 @@
 .lp-sticky .lp-btn--primary{flex:1}
 .lp-sticky .lp-btn--wa{flex:0 0 52px;padding:0;width:52px}
 @media(min-width:760px){
- .lp-root h1{font-size:44px}.lp-root h2{font-size:32px}
- .lp-hero-grid{grid-template-columns:1.2fr .8fr}.lp-hero-img{max-width:360px}
- .lp-btn-row{flex-direction:row}
- .lp-two{grid-template-columns:1fr 1fr}
- .lp-quotes{grid-template-columns:1fr 1fr}
- .lp-packs{grid-template-columns:1fr 1fr;align-items:stretch}
+ .lp-root{font-size:17px}
+ .lp-root h1{font-size:44px}.lp-root h2{font-size:34px}.lp-root h3{font-size:21px}
+ .lp-wrap{padding:0 28px}
+ .lp-sec{padding:64px 0}
+ .lp-lead{font-size:19px}
+ .lp-head{position:sticky;top:0;z-index:50}
+ .lp-hero{padding:48px 0 64px}
+ .lp-hero-grid{grid-template-columns:1.15fr .85fr;gap:48px}.lp-hero-img{max-width:380px}
+ .lp-btn-row{flex-direction:row;flex-wrap:wrap}
+ .lp-two{grid-template-columns:1fr 1fr;gap:48px}
+ .lp-checks{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+ .lp-checks li{margin:0}
+ .lp-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+ .lp-steps li{flex-direction:column;text-align:center;padding:30px 18px 22px;margin:0}
+ .lp-steps li::before{left:14px;top:14px}
+ .lp-ico{flex-basis:auto;width:76px;height:76px}.lp-ico svg{width:44px;height:44px}
+ .lp-dayrule{font-size:18px;padding:14px 20px}
+ .lp-quotes{grid-template-columns:1fr 1fr;gap:18px}
+ .lp-packs{grid-template-columns:1fr 1fr;align-items:stretch;max-width:860px;margin-left:auto;margin-right:auto;gap:24px}
+ .lp-sec--dark h2,.lp-sec--dark>.lp-wrap>p{text-align:center}
+ .lp-pack-note{text-align:center}
+ .lp-faq .lp-wrap,.lp-narrow{max-width:860px}
+ .lp-callout{max-width:860px}
+ .lp-order-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+ .lp-form{padding:30px}
  .lp-sticky{display:none}.lp-foot{padding-bottom:30px}
+ .lp-foot .lp-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px 40px}
+ .lp-foot .lp-wrap p:last-child{grid-column:1/-1}
 }
+@media(min-width:1100px){
+ .lp-wrap{max-width:1120px}
+ .lp-root h1{font-size:52px}.lp-root h2{font-size:38px}
+ .lp-hero-img{max-width:420px}
+ .lp-quote{padding:22px}
+ .lp-pack-back{max-width:340px}
+}
+@media(max-width:380px){
+ .lp-root h1{font-size:27px}.lp-root h2{font-size:23px}
+ .lp-btn{padding:12px 16px;font-size:16px}
+ .lp-head .lp-brand{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){.lp-root *{scroll-behavior:auto!important}}
 </style>
 
 <div class="lp-root lp-test" id="lp-top">
@@ -313,9 +347,19 @@
 </div></section>
 
 <!-- ============ 12. ORDER FORM ============ -->
-<section class="lp-sec" id="lp-order"><div class="lp-wrap">
+<section class="lp-sec" id="lp-order"><div class="lp-wrap lp-order-grid">
+  <div>
   <h2>Place your order</h2>
   <p>Fill in your details. We will call or message you to confirm before we send. Your parcel is packed privately.</p>
+  <ul class="lp-checks" style="display:block">
+    <li>We call or message you to confirm your order</li>
+    <li>Pay on delivery <span class="lp-ph">[CONFIRM]</span></li>
+    <li>Delivery to all 36 states and the FCT. Fee and time: <span class="lp-ph">[TO BE CONFIRMED]</span></li>
+    <li>We check in with you after your first week</li>
+  </ul>
+  <p style="margin-top:16px">Prefer to talk first? <a data-lp-wa href="#lp-order" target="_blank" rel="noopener">Chat with us on WhatsApp</a> or call <a href="tel:+2348164553746">+234 816 455 3746</a>.</p>
+  </div>
+  <div>
   <!-- GO-LIVE: replace this whole form block with systeme.io's native form (see 07-systeme-setup-guide.md). -->
   <form class="lp-form" id="lp-form" novalidate>
     <div class="lp-formbody">
@@ -342,7 +386,7 @@
       <a class="lp-btn lp-btn--wa" href="#lp-order" data-lp-wa target="_blank" rel="noopener">Chat with us on WhatsApp</a>
     </div>
   </form>
-  <p style="margin-top:16px">Prefer to talk first? <a data-lp-wa href="#lp-order" target="_blank" rel="noopener">Chat with us on WhatsApp</a> or call <a href="tel:+2348164553746">+234 816 455 3746</a>.</p>
+  </div>
 </div></section>
 
 <!-- ============ FOOTER ============ -->
