@@ -1,58 +1,98 @@
-# 03. Landing page blueprint, PROVISIONAL (Phase 1 missing)
-
-> **Status: provisional.** Our avatar and research docs were not supplied, so Phase 1 was not done and this blueprint rests on competitor evidence only. Product name, brand name, format, ingredients, price and NAFDAC number are unknown, so all of it is marked `[TBC]`. Nothing here invents facts about our product.
+# 03. Landing page blueprint v2: Pile Relief Tea (Criterion Herbaceuticals)
+Built from Phase 1 (our avatars and content bank) plus Phase 4 (the 4 captured competitor pages; the spray page is dead). Open items are marked `[TBC]`, and they are listed in `04-questions-for-client.md`. Headlines are directional; final copy comes in Phase 6.
 
 ## 1. Big idea and angle
-**"Real relief you can check."** Calm the pain, itching and bleeding so you can sit, sleep and work again, with proof you can verify (NAFDAC number, ingredients, usage, real customers) and an honest "see a doctor if…" line. It differentiates from the market by *not* promising a permanent cure.
+**"You're not alone. And here is exactly what is in the cup."**
+Two layers, matching our research:
+1. **Emotional:** piles are common, silence is what hurts. Speak to the shame, the toilet fear and the seat. (All competitors speak only to the body, and in a scary way.)
+2. **Rational:** a tea with a **label you can read**: Dongoyaro and Negro pepper, 3 g per bag, 30 bags, one a day, a real company, a real number. In a market full of "permanent cure" claims and mystery products, transparency is the fresh angle.
+Format advantage: tea is gentle, simple and private. Its weakness is "Tea, ke?", so we answer that directly.
 
-**Headline options (directional):**
-1. "Pile pain making it hard to sit? Here is a gentle, NAFDAC-registered herbal option to calm it." (needs a number)
-2. "Itching, burning, bleeding after the toilet? Get relief you can feel [in TBC days]." (timing must be evidence-backed)
-3. "Tired of pile creams that only work for a few hours? Try supporting it from inside AND outside." (only if our product has both parts)
+**3 headline options**
+1. "Piles making every seat a battle? Here is a gentle herbal tea routine, and you can read what's inside."
+2. "You don't have to suffer in silence. One teabag a day. Dongoyaro and Negro pepper. No mystery."
+3. "Pile no be small matter. Abeg, make we talk." *(light-Pidgin variant for WhatsApp/short-video traffic; test vs plain English)*
 
-**Sub-headline options:**
-1. "Pay on delivery. Discreet packaging. NAFDAC No. [TBC]."
-2. "Plain directions, a real ingredient list, and a doctor's-advice note so you know what you are taking."
-3. "Order from home. We call to confirm. You pay when it arrives."
+**3 sub-headline options**
+1. "Made to help ease pain when passing stool, soothe itching and burning, and keep you comfortable sitting, walking and working." *(approved benefit wording from the bank)*
+2. "30 teabags. One a day. A month's routine, from Criterion Herbaceuticals. We reply to every message."
+3. "Private. Discreet delivery [TBC]. Pay on delivery [TBC]."
 
-## 2. Section outline (≈ 16 to 18 mobile screens, shorter than the 20–33 competitor range)
-| # | Section | Purpose / content | Length | Source |
+## 2. Section outline (target ≈ 14 to 16 mobile screens)
+| # | Section | What goes in it | Length | From |
 |---|---|---|---|---|
-| 1 | Sticky header + hero | Headline, sub, product photo, NAFDAC chip, CTA | 1 screen | P3, P5 |
-| 2 | Symptom check | "Do you have these?" 5–6 symptoms, in the customer's own words | 1 | P3 |
-| 3 | Short story | 1 relatable story (real or labelled) | 1.5 | P2, P4 |
-| 4 | Why other things fail / how this works | Inside + outside idea, only if true for our format | 1.5 | P3 |
-| 5 | What's inside | Ingredient list and what each is traditionally used for | 1 | P4 |
-| 6 | Day-by-day expectation | Honest timeline | 1 | P3 |
-| 7 | Proof | 4 WhatsApp screenshots with permission | 2 | P5 |
-| 8 | How to use | Dose, duration, tips | 1 | P3 |
-| 9 | Offer | 3 packages (not 5), POD, free delivery [TBC] | 2 | market norm |
-| 10 | Guarantee + safety | Refund terms (real), when to see a doctor | 1 | gap |
-| 11 | FAQ | 6–8 questions (pregnancy, other medicines, bleeding, duration, delivery) | 1.5 | gap |
-| 12 | Order form | Embedded | 1.5 | all |
-| 13 | Footer disclaimer | NAFDAC no., disclaimer, contacts | 0.5 | Rule 3 |
+| 1 | **Hero** | Headline, sub-headline, product-pack photo, 1 CTA ("Order now") and a "Chat on WhatsApp" link, trust chips: "Dongoyaro + Negro pepper", "30 bags", "Pay on delivery [TBC]" | 1 | P3, P5 + our research |
+| 2 | **"You are not alone"** | A short, warm paragraph that names piles, shame and silence, with 3 of the customer's real phrases (anonymised, labelled as public comments, not customers) | 1 | Avatar core truth |
+| 3 | **Symptom check** | "Does this sound like your day?" 6 lines: toilet fear, seat shifting, burning, itching at night, lump, blood on tissue, using their words | 1 | P3 (self-diagnosis) |
+| 4 | **Why other things didn't last / what's different** | The honest "label" idea: herbs named, dose clear, number real. No attack on doctors. *"Some people need a doctor. This is a gentle daily routine."* | 1 | Gap + research |
+| 5 | **What's inside the cup** | Two herbs with photos, what each is traditionally used for [TBC wording, evidence], 3 g per bag, no hidden extras [TBC confirm] | 1.5 | P4 (ingredients) |
+| 6 | **How to use (4 steps)** | 1 teabag, 200 ml hot water, 10 minutes, drink once a day; 30 days per pack; storage; "ask us about best time/taste" | 1 | P3 (usage) |
+| 7 | **What to expect, honestly** | "Everyone is different. We suggest a full month, and we check in at day 7." No invented timeline. | 0.5 | Research objection list |
+| 8 | **Who it's for / ask us first** | For adults living with piles. **Pregnant, breastfeeding, children, on other medicines, or heavy bleeding: message us first.** | 1 | Avatar rules |
+| 9 | **Proof** | Phase A: honest substitutes (label photo, company address/phone, NAFDAC status [TBC]). Phase B: real WhatsApp screenshots with permission as they arrive | 1 to 2 | P5 + Rule 2 |
+| 10 | **Offer** | 2 to 3 packages [TBC prices], pay on delivery [TBC], delivery info [TBC] | 2 | market norm |
+| 11 | **Our promise** | Refund/support terms [TBC, only if real] and "We reply to every message". | 0.5 | Gap |
+| 12 | **FAQ** | 8 to 10 Q&As from the bank ("Tea, ke?", is it registered, with my drugs, how long, bitter?, pregnant?...) | 1.5 | Gap, all 4 pages lack it |
+| 13 | **When to see a doctor** | One calm box: bleeding that keeps going, heavy bleeding, dizziness, pain that doesn't settle: see a doctor. Never a scare. | 0.5 | Rule 3, gap |
+| 14 | **Order form** | Short form, one tap from any CTA | 1.5 | all |
+| 15 | **Footer** | Criterion Herbaceuticals, phones, disclaimer, NAFDAC line [TBC] | 0.5 | Rule 3 |
 
-Justification: shorter than P2/P3 (28/33 screens) but longer than P5 (20) since P5 lacks FAQ and offer clarity. This is enough to build belief and handle objections without form fatigue.
+**Length justification:** ~15 screens is shorter than P2 (28), P3 (33), P4 (25) and P5-plus-FAQ, and long enough to handle the real objections our research lists ("What is inside?", "Tea, ke?", "Is it real?", "Is it registered?"). Our buyers tend to *distrust* and need answers, but they are also on mobile and tired. Keep paragraphs to 1 to 3 lines.
 
 ## 3. CTA plan
-- About 5 buttons: hero, after story, after proof, after offer, and the form. Button text: "Order now, pay on delivery".
-- **Sticky mobile bar** with "Order now" plus a **WhatsApp** icon (gap in all 4 competitors).
+- **5 form-links:** hero, after "what's inside", after "how to use", after the offer, and the form itself. Text: "Order Pile Relief Tea" (not "cure"). Secondary text link: "Rather talk first? Chat with us on WhatsApp."
+- **Sticky bottom bar on mobile:** "Order now" + a WhatsApp icon. Rationale: our research says the main CTA is **"DM us"** and the audience likes a private, human chat. No competitor offers WhatsApp.
+- No pop-ups.
 
 ## 4. Form recommendation
-Fields in order: Package (radio, pre-selected) → Full name → Phone number → State (dropdown, 36 states + FCT) → Delivery address. Optional: WhatsApp (if different from phone). **No email.** Thank-you: confirmation page that says "we will call within X hours" plus a WhatsApp button. The submission route is TBC (systeme.io native form is the likely choice).
+Fields in order (5): **Package** (pre-selected) → **Full name** → **Phone (WhatsApp-able)** → **State** (dropdown: 36 states + FCT) → **Delivery address (street, town)**.
+- No email, no "ready to receive" field, no city dropdown. Competitor forms ran 6 to 9 fields.
+- A short line under the button: "We'll call or message you to confirm before we send. Packaged discreetly. [TBC]".
+- **Thank-you page:** "Thank you. We'll message you within [TBC] hours." plus a WhatsApp button and the day-7 check-in note. Plus the usage steps so the buyer is already engaged.
 
-## 5. Offer options (for you to decide, no prices invented)
-- A: 3 tiers (1 / 2 / 3 packs) with the middle tier highlighted. B: 2 tiers (trial, full course). C: 1 hero bundle. Avoid fake anchor prices and "free" items that are really priced in, unless true.
+## 5. Offer recommendation (options for you to decide; no prices invented)
+- **A. Single pack + "Month-plus" pack:** 1 pack (30 days) and a 2-pack with a saving.
+- **B. Three tiers:** 1 / 2 / 3 packs, middle tier highlighted, price per day shown in naira.
+- **C. One simple pack only:** cleanest for a brand built on "no hype".
+- Avoid: fake "normal price" strike-throughs, "free" items that are really priced in, "not recommended" labels.
+- Consider a **gift line** for Chioma (the buyer for a parent/spouse): "Discreet delivery to them / gift note".
+- **Delivery and payment:** state coverage, fee/free, time, POD rules [TBC].
 
 ## 6. Proof plan
-NAFDAC certificate image and number. 4 to 6 real WhatsApp screenshots with written permission (name initials, state). Ingredient photo. 1 short customer video (optional). Pharmacist or doctor reviewer only if real and consenting.
+| Proof | Format | Where | Status |
+|---|---|---|---|
+| Label photo (herbs, dose, address, phones) | Image | Hero + section 5 | need photo |
+| Company identity: Criterion Herbaceuticals, address, 2 phone numbers | Text | Footer + section 11 | have phones; need address |
+| NAFDAC number or honest registration status | Text/badge | Hero chip + footer | **must confirm; site says "application in progress"** |
+| Real customer messages (with written permission) | WhatsApp screenshots, initials + state | Section 9 | none yet. Placeholder block until we have them |
+| Day-7 "what did you notice?" replies | Text | Later | collect from first customers |
+| Pharmacist/doctor review of safety and facts | Name + short note, only if real | Section 8/13 | requested by the research itself |
+Do **not** use the written "scenes" or the public Nairaland/YouTube quotes as customer proof.
 
 ## 7. Compliance and trust checklist
-- No "cure", "permanent", "100%", "no side effects", "clinically proven" without written evidence. Use "relief", "supports", "helps with".
-- NAFDAC number, directions, and "see a doctor if bleeding is heavy or persists" safety note.
-- No fake timers or stock counters. No invented numbers.
-- No unsupported cancer scare claims. No before/after body images (Meta restricted).
-- Flag: everything on competitor pages 2 and 3 breaks these rules and must not be copied.
+- No "cure", "permanent", "100%", "miracle", "no side effects", "clinically proven", "works for everyone". Use "made to help ease/soothe", "daily comfort".
+- ⚠ **Flag:** the bank's line "improve blood flow and reduce inflammation" is a body-function claim. Get evidence or a pharmacist's sign-off, or soften to "traditionally used…".
+- **NAFDAC: do not write "NAFDAC approved" unless there is a number and certificate.** If it is pending, say nothing false: e.g. "Made by Criterion Herbaceuticals. Registration status: [TBC]".
+- Usage directions, safety note ("ask us first if pregnant, breastfeeding, on other medicines, or bleeding heavily"), "see a doctor if…", short disclaimer, "not a replacement for medical care".
+- Never say "skip surgery". Don't discourage hospital. (Avatar rule.)
+- No fake timers or "only 3 left". No invented numbers. No before/after body images.
+- Dongoyaro (neem) is often flagged in herbal safety guidance around pregnancy and long-term use: **ask the pharmacist** before we write "who it's for".
 
 ## 8. Image and asset list
-Hero product shot 1080×1080; product-in-hand lifestyle 1080×1350; 4 WhatsApp screenshots; NAFDAC certificate; ingredient flat-lay 1080×1080; usage steps (3 icons); guarantee badge; delivery icons. Logo and brand colours from `inputs/brand/`.
+| # | Image | Size |
+|---|---|---|
+| 1 | Hero: pack + teabag + cup on a clean table, warm light | 1080×1080 (+ 1200×800 desktop) |
+| 2 | Label close-up (herbs, 3 g, 30 bags, phones) | 1080×1080 |
+| 3 | Dongoyaro (leaf) photo | 1080×1080 |
+| 4 | Negro pepper photo | 1080×1080 |
+| 5 | Steps 1 to 4 (teabag, hot water, 10 minutes, drink): icons or photos | 4 × 600×600 |
+| 6 | Calm "relief" lifestyle: person sitting comfortably at desk/home (no suffering or graphic imagery) | 1080×1350 |
+| 7 | 4 to 6 WhatsApp screenshots (when we have them) | ~800 wide |
+| 8 | Brand logo (Criterion) and favicon | existing in repo `images/` |
+| 9 | Guarantee/promise badge (only if real) | 400×400 |
+| 10 | NAFDAC certificate image (only if real) | 800×1000 |
+Brand: deep forest green #1F4D3A, botanical green #4F8A5B, earth brown #7A5A42, ivory #F6F2E8; fonts Plus Jakarta Sans (headings) and Poppins (body), taken from the existing Criterion site. **Confirm they apply to this product.**
+
+## 9. Traffic and test notes
+- Traffic: Facebook/Instagram cold traffic. Test **plain English vs light Pidgin** hero (the research asks which wins). Two or three hooks from Part 2 can become ad-to-page message match: silence, toilet fear, the seat.
+- An advertorial is optional later. For now, a direct page.

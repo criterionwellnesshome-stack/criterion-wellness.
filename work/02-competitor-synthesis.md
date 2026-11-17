@@ -73,3 +73,11 @@ These must be confirmed against our product's actual evidence. We cannot yet say
 
 ## Advertorial verdict
 Consider a pre-sell advertorial later. Our page is a direct sales page. See `competitors/page-4/teardown.md`.
+
+---
+## 7. Addendum: what this means for a TEA (our format)
+- **Format-agnostic patterns we can use:** POD + free delivery, a package ladder, text/WhatsApp testimonials, a day-by-day expectation timeline, a "how to use" block, a short form at the bottom, a guarantee.
+- **Format-specific patterns we cannot copy:** the inside-capsule/outside-balm mechanism (P2, P3, P5) and balm usage (steam, direct). Our product is **one tea, taken by mouth.** The tea format is actually an advantage for trust: an ingredient list of two named herbs, a one-line routine ("one teabag, 200 ml, 10 minutes"), and a gentle, non-medical feel. The weakness is the doubt: **"Tea, ke?"**.
+- **Closest competitor on honesty:** P4 (ingredients listed) and P5 (short page, WhatsApp screenshots). Nobody else names their herbs.
+- **Our research aligns with the gap:** the avatar document asks for exactly what all 4 pages skip: a real label, an honest tone, a private chat and "when to see a doctor".
+- **Caution:** every competitor makes "cure/permanent" claims. Our research bans them. Fine. That is the differentiator, but we have **no proof assets yet**, so the page must work on honesty, transparency and a low-risk offer rather than on testimonials.
