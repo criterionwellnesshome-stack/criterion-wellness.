@@ -51,7 +51,7 @@ The form in the pasted block is a **mock**: it only shows a thank-you message an
 - [ ] **WhatsApp number**: replace `+234 800 000 0000`.
 - [ ] **NAFDAC No** (hero table, FAQ, footer): `[TO BE ADDED]`.
 - [ ] **Ingredients**: the page now shows the two herbs printed on the pack. Add the full herb list (the pack says "other well established herbal formulas") in the "What's in the cup" section and FAQ.
-- [ ] **Directions**: the pack back says "morning and night", the front says "Once a Day". Confirm, then fix the page, the pack and the price lines.
+- [ ] **Directions**: the page uses the client's directions (1 tea bag a day, used twice). The pack back panel says something slightly different (200 ml, cool, before food, no re-use). Make the pack and page match.
 - [ ] **Delivery fee, delivery time, pay on delivery, refund policy**: placeholders.
 - [ ] **Logo**: add the Criterion Herbaceuticals logo (the repo's logo says "Holistic Wellness Home").
 - [ ] **Pack photos**: the pack is an AI-style mock-up. Use real photos.

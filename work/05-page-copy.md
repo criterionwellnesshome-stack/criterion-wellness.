@@ -37,8 +37,11 @@ Image: pack back panel ("This is the back of the pack. Read it before you buy.")
 *What it is made to do (pack benefit list, softened):* made to help ease pain when passing stool; soothe itching and burning; help reduce swelling and irritation; keep you comfortable sitting, walking and working; help you feel lighter and more at ease; support smoother, easier bowel movements.
 *Left out on purpose:* the pack's "improve blood flow and reduce inflammation within the gastrointestinal tract" line.
 
-## 6. How to use (pack back-panel wording)
-1. Put a teabag in a kettle. 2. Add 200 ml of water and boil for 5 minutes. 3. Leave to cool. 4. Take it morning and night, before food. [CONFIRM: the pack front says "Once a Day"]
+## 6. How to use (client-supplied directions, used exactly)
+Banner: **1 tea bag a day. The same bag is used twice.**
+1. **Morning:** Boil the tea bag in water for about 5 minutes. Drink. (sun icon)
+2. **Night:** Add fresh water to the same tea bag, boil it again, and drink. (moon icon)
+3. **New bag daily:** Use a new tea bag the next day. (tea-bag icon)
 Store in a cool, dry place away from direct sunlight. One pack: 30 teabags, 3 g each, for one person.
 
 ## 7. What to expect, honestly

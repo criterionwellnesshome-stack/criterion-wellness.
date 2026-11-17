@@ -61,8 +61,13 @@
 .lp-pack-back{max-width:300px;margin:0 auto;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
 /* steps */
 .lp-steps{list-style:none;margin:0;padding:0;counter-reset:s}
-.lp-steps li{counter-increment:s;position:relative;padding:14px 14px 14px 62px;margin-bottom:12px;background:#fff;border-radius:12px;color:var(--lp-text)}
-.lp-steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:36px;height:36px;border-radius:50%;background:var(--lp-gold);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',Arial,sans-serif}
+.lp-steps li{counter-increment:s;position:relative;display:flex;align-items:center;gap:14px;padding:14px;margin-bottom:12px;background:#fff;border-radius:14px;border:1px solid rgba(14,90,43,.12);color:var(--lp-text)}
+.lp-steps li::before{content:counter(s);position:absolute;left:8px;top:8px;width:24px;height:24px;border-radius:50%;background:var(--lp-gold);color:#fff;font:800 13px 'Plus Jakarta Sans',Arial,sans-serif;display:flex;align-items:center;justify-content:center;z-index:1}
+.lp-ico{flex:0 0 60px;width:60px;height:60px;border-radius:50%;background:var(--lp-ivory);border:2px solid var(--lp-gold);display:flex;align-items:center;justify-content:center}
+.lp-ico svg{width:34px;height:34px}
+.lp-steps strong{display:block;font-family:'Plus Jakarta Sans',Arial,sans-serif;color:var(--lp-green);font-size:17px;text-transform:uppercase;letter-spacing:.03em;margin-bottom:2px}
+.lp-steps span.lp-t{display:block;font-size:16px;line-height:1.45}
+.lp-dayrule{background:var(--lp-green);color:#fff;border-radius:12px;padding:12px 16px;margin-bottom:14px;font-weight:600;text-align:center}
 /* testimonials */
 .lp-quotes{display:grid;gap:14px}
 .lp-quote{background:#fff;border-radius:14px;padding:18px;border:1px solid rgba(14,90,43,.1)}
@@ -213,14 +218,14 @@
 <!-- ============ 6. HOW TO USE ============ -->
 <section class="lp-sec"><div class="lp-wrap">
   <h2>How to use it</h2>
+  <p class="lp-dayrule">1 tea bag a day. The same bag is used twice.</p>
+  <!-- DIRECTIONS: client-supplied wording (overrides the pack back panel; see 00-pack-facts.md, Conflicts & notes) -->
   <ol class="lp-steps">
-    <li>Put <strong>a teabag</strong> in a kettle.</li>
-    <li>Add <strong>200 ml of water</strong> and boil for <strong>5 minutes</strong>.</li>
-    <li>Leave to cool.</li>
-    <li>Take it <strong>morning and night, before food</strong>. <span class="lp-ph">[CONFIRM: the pack front says "Once a Day"]</span></li>
+    <li><span class="lp-ico"><svg viewBox="0 0 40 40" fill="none" stroke="#C9A24B" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="20" cy="20" r="7" fill="#F5D77A"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M8.7 8.7l3.5 3.5M27.8 27.8l3.5 3.5M31.3 8.7l-3.5 3.5M12.2 27.8l-3.5 3.5"/></svg></span><div><strong>Morning</strong><span class="lp-t">Boil the tea bag in water for about 5 minutes. Drink.</span></div></li>
+    <li><span class="lp-ico"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M27 6a15 15 0 1 0 8 21A12 12 0 0 1 27 6z" fill="#0E5A2B"/><circle cx="31" cy="10" r="1.6" fill="#C9A24B"/><circle cx="35" cy="17" r="1.2" fill="#C9A24B"/></svg></span><div><strong>Night</strong><span class="lp-t">Add fresh water to the same tea bag, boil it again, and drink.</span></div></li>
+    <li><span class="lp-ico"><svg viewBox="0 0 40 40" fill="none" stroke="#0E5A2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14l10-8 10 8v16a3 3 0 0 1-3 3H13a3 3 0 0 1-3-3z" fill="#E5F3E8"/><path d="M20 6V2.5M20 2.5c3 0 5 1 5 3" /><rect x="23" y="4" width="8" height="6" rx="1.5" fill="#F5D77A" stroke="#C9A24B"/><path d="M15 24l4 4 7-8" stroke="#C9A24B"/></svg></span><div><strong>New bag daily</strong><span class="lp-t">Use a new tea bag the next day.</span></div></li>
   </ol>
   <p>Store in a cool, dry place away from direct sunlight. One pack has 30 teabags of 3 g each. It is for one person.</p>
-  <!-- NOTE: directions are the pack BACK-panel wording. The pack front says "Once a Day" and "30 servings". Confirm, then fix here, the offer "per day" lines and the pack. -->
   <h3>What to expect, honestly</h3>
   <p>Everyone is different, so we don't promise a timeline. We suggest using a full pack, and we will check in with you after the first week to ask how you are doing. Tell us what you notice.</p>
 </div></section>
