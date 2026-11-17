@@ -1,4 +1,4 @@
-# 03. Landing page blueprint v2: Pile Relief Tea (Criterion Herbaceuticals)
+# 03. Landing page blueprint v3: Pile Terminator Tea (Criterion Herbaceuticals)
 Built from Phase 1 (our avatars and content bank) plus Phase 4 (the 4 captured competitor pages; the spray page is dead). Open items are marked `[TBC]`, and they are listed in `04-questions-for-client.md`. Headlines are directional; final copy comes in Phase 6.
 
 ## 1. Big idea and angle
@@ -96,3 +96,13 @@ Brand: deep forest green #1F4D3A, botanical green #4F8A5B, earth brown #7A5A42, 
 ## 9. Traffic and test notes
 - Traffic: Facebook/Instagram cold traffic. Test **plain English vs light Pidgin** hero (the research asks which wins). Two or three hooks from Part 2 can become ad-to-page message match: silence, toilet fear, the seat.
 - An advertorial is optional later. For now, a direct page.
+
+---
+## 10. Update after client answers (17 Nov 2026): what changed
+- **Product name is Pile Terminator Tea** (pack artwork supplied), not "Pile Relief Tea". All page copy uses the pack name. This is a **MOCK/TEST** page: placeholders are allowed and marked.
+- **Offer decided:** 1 pack ₦15,000 (about ₦500/day); **3-month ₦36,000** (₦12,000 each, about ₦400/day, saves ₦9,000) as the **Best value / recommended** option. Two tiers only. Delivery fee, time and payment are placeholders; pay on delivery is assumed.
+- **Proof:** mock testimonials (4, Nigerian names/cities, no cure or guarantee language), each marked with a MOCK comment and a visible test-mode tag.
+- **Contact:** mock WhatsApp +234 800 000 0000, set in one line of config. The real phones printed on the pack (+234 816 455 3746 / +234 904 268 9849) are shown for calls.
+- **Tracking:** no Pixel ID. A comment marks the Lead event; the guide says to add the Pixel in systeme.io's header-code settings.
+- **Ingredients and NAFDAC:** placeholders. **The pack back names "Olax subscorpioidea, Gongronema latifolium"**, which conflicts with the research (Dongoyaro, Negro pepper). Not used on the page until resolved.
+- **Page order built:** hero, not alone, symptom check, label you can read, what's in the cup, how to use + honest expectation, ask us first, testimonials (mock), offer, promise, FAQ + see-a-doctor, form, footer (about 13 mobile screens).

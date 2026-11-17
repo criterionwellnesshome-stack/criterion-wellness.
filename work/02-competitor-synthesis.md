@@ -1,5 +1,5 @@
 # 02. Competitor synthesis (pile, Nigeria)
-Based on 4 captured pages (2, 3, 4, 5). **Page 1 (spray) is dead (404) and not analysed.** No Ads Library run-time notes were supplied, so no page is weighted as proven-profitable. Capture date: 17 Nov 2026.
+Based on 4 captured pages (2, 3, 4, 5). **Skipped: Page 1 (revivecare.xyz/pile-spray/, the spray) returned 404, and per client instruction it was ignored.** No Ads Library run-time notes were supplied, so no page is weighted as proven-profitable. Capture date: 17 Nov 2026.
 
 ## 1. Comparison table
 | | P2 Relief Wellness | P3 Herboplus (Elipy) | P4 Vanguard advertorial | P5 Ekiema (Pile Care) |

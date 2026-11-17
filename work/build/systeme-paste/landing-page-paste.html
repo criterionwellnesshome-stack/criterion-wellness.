@@ -1,0 +1,390 @@
+<!-- Paste this whole block into ONE systeme.io Raw HTML element -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap');
+/* ===== Pile Terminator Tea landing page. All rules are scoped to .lp-root ===== */
+.lp-root{--lp-green:#1F4D3A;--lp-green2:#4F8A5B;--lp-brown:#7A5A42;--lp-ivory:#F6F2E8;--lp-soft:#FBF9F5;--lp-text:#222;--lp-muted:#555;--lp-gold:#C9A24B;--lp-red:#B3261E;
+ font-family:'Poppins',Arial,sans-serif;font-size:16px;line-height:1.6;color:var(--lp-text);background:var(--lp-soft);-webkit-text-size-adjust:100%;overflow-x:hidden}
+.lp-root *,.lp-root *::before,.lp-root *::after{box-sizing:border-box}
+.lp-root img{max-width:100%;height:auto;display:block}
+.lp-root h1,.lp-root h2,.lp-root h3{font-family:'Plus Jakarta Sans',Arial,sans-serif;color:var(--lp-green);line-height:1.2;margin:0 0 .6em}
+.lp-root h1{font-size:30px;font-weight:800}
+.lp-root h2{font-size:25px;font-weight:800}
+.lp-root h3{font-size:19px;font-weight:700}
+.lp-root p{margin:0 0 1em}
+.lp-root a{color:var(--lp-green)}
+.lp-wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.lp-sec{padding:44px 0}
+.lp-sec--alt{background:var(--lp-ivory)}
+.lp-sec--dark{background:var(--lp-green);color:#fff}
+.lp-sec--dark h2,.lp-sec--dark h3{color:#fff}
+.lp-eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--lp-brown);margin-bottom:10px}
+.lp-lead{font-size:17px;color:var(--lp-muted)}
+/* test bar + mock tags: remove class lp-test from the wrapper to hide them */
+.lp-testbar{display:none;background:#FFE9A8;color:#5a4300;text-align:center;font-size:13px;padding:8px 12px;font-weight:600}
+.lp-mock-tag{display:none;font-size:11px;font-weight:600;background:#FFE9A8;color:#5a4300;border-radius:4px;padding:2px 6px;margin-left:6px;vertical-align:middle}
+.lp-test .lp-testbar{display:block}
+.lp-test .lp-mock-tag{display:inline-block}
+.lp-ph{background:#FFF1B8;border:1px dashed #C9A24B;border-radius:4px;padding:1px 6px;font-weight:600;color:#5a4300}
+/* buttons */
+.lp-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 24px;border-radius:999px;border:0;font:600 17px 'Poppins',Arial,sans-serif;text-decoration:none;cursor:pointer;text-align:center;line-height:1.2}
+.lp-root .lp-btn--primary{background:var(--lp-red);color:#fff;box-shadow:0 4px 12px rgba(179,38,30,.25)}
+.lp-root .lp-btn--primary:hover{background:#9a1f18;color:#fff}
+.lp-root .lp-btn--wa{background:#fff;color:#146c43;border:2px solid #25D366}
+.lp-btn--block{display:flex;width:100%}
+.lp-btn-row{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.lp-root a:focus-visible,.lp-root button:focus-visible,.lp-root input:focus-visible,.lp-root select:focus-visible,.lp-root summary:focus-visible{outline:3px solid #1b6fd1;outline-offset:2px}
+/* header */
+.lp-head{background:#fff;border-bottom:1px solid rgba(31,77,58,.12)}
+.lp-head .lp-wrap{display:flex;align-items:center;justify-content:space-between;min-height:60px}
+.lp-brand{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-weight:800;font-size:18px;color:var(--lp-green);line-height:1.1}.lp-brand small{display:block;font:600 10px 'Poppins',Arial,sans-serif;letter-spacing:.14em;color:var(--lp-brown)}
+.lp-head a.lp-btn{min-height:44px;padding:8px 16px;font-size:15px}
+/* hero */
+.lp-hero{padding:28px 0 40px;background:linear-gradient(180deg,#fff 0,var(--lp-ivory) 100%)}
+.lp-hero-grid{display:grid;gap:22px;align-items:center}
+.lp-hero-img{max-width:290px;margin:0 auto;border-radius:16px;box-shadow:0 10px 30px rgba(31,77,58,.18)}
+.lp-chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.lp-chips li{background:#fff;border:1px solid rgba(31,77,58,.2);border-radius:999px;padding:6px 12px;font-size:14px;font-weight:500;color:var(--lp-green)}
+.lp-small{font-size:14px;color:var(--lp-muted)}
+/* lists */
+.lp-checks{list-style:none;margin:0;padding:0}
+.lp-checks li{position:relative;padding:12px 12px 12px 44px;margin-bottom:10px;background:#fff;border-radius:12px;border:1px solid rgba(31,77,58,.1)}
+.lp-checks li::before{content:"";position:absolute;left:14px;top:15px;width:18px;height:18px;border-radius:50%;background:var(--lp-green2)}
+.lp-checks li::after{content:"";position:absolute;left:20px;top:19px;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.lp-q li::before{background:var(--lp-brown)}
+.lp-q li::after{content:"?";border:0;transform:none;left:19px;top:13px;color:#fff;font-weight:700;font-size:13px;width:auto;height:auto}
+.lp-callout{background:#fff;border-left:5px solid var(--lp-green2);border-radius:10px;padding:16px;margin:18px 0}
+.lp-callout--warn{border-left-color:var(--lp-brown);background:#FFF7EE}
+/* table */
+.lp-table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:15px}
+.lp-table th,.lp-table td{padding:11px 12px;text-align:left;border-bottom:1px solid rgba(31,77,58,.1);vertical-align:top}
+.lp-table th{width:36%;color:var(--lp-green);font-weight:600;background:#F1F6F2}
+.lp-two{display:grid;gap:22px;align-items:start}
+.lp-pack-back{max-width:300px;margin:0 auto;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+/* steps */
+.lp-steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.lp-steps li{counter-increment:s;position:relative;padding:14px 14px 14px 62px;margin-bottom:12px;background:#fff;border-radius:12px;color:var(--lp-text)}
+.lp-steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:36px;height:36px;border-radius:50%;background:var(--lp-gold);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',Arial,sans-serif}
+/* testimonials */
+.lp-quotes{display:grid;gap:14px}
+.lp-quote{background:#fff;border-radius:14px;padding:18px;border:1px solid rgba(31,77,58,.1)}
+.lp-quote p{margin:0 0 10px;font-style:italic}
+.lp-quote cite{font-style:normal;font-weight:600;color:var(--lp-green);font-size:15px}
+/* packages */
+.lp-packs{display:grid;gap:18px;margin-top:20px}
+.lp-pack{background:#fff;border:2px solid rgba(31,77,58,.15);border-radius:18px;padding:22px;position:relative;color:var(--lp-text)}
+.lp-pack--best{border-color:var(--lp-gold);box-shadow:0 10px 28px rgba(0,0,0,.18);margin-top:10px}
+.lp-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--lp-gold);color:#fff;font-weight:700;font-size:13px;letter-spacing:.03em;padding:5px 14px;border-radius:999px;white-space:nowrap}
+.lp-pack h3{color:var(--lp-green);margin-bottom:4px}
+.lp-price{font-family:'Plus Jakarta Sans',Arial,sans-serif;font-size:36px;font-weight:800;color:var(--lp-green);line-height:1.1}
+.lp-price small{font-size:15px;font-weight:600;color:var(--lp-muted)}
+.lp-save{display:inline-block;background:#E5F3E8;color:#1a6a3a;font-weight:600;font-size:14px;border-radius:6px;padding:3px 8px;margin:6px 0}
+.lp-pack ul{margin:12px 0 16px;padding-left:20px;font-size:15px}
+.lp-pack-note{margin-top:16px;font-size:14px;color:#e8efe9}
+/* faq */
+.lp-faq details{background:#fff;border-radius:12px;border:1px solid rgba(31,77,58,.12);margin-bottom:10px}
+.lp-faq summary{cursor:pointer;list-style:none;padding:15px 44px 15px 16px;font-weight:600;color:var(--lp-green);position:relative;min-height:48px}
+.lp-faq summary::-webkit-details-marker{display:none}
+.lp-faq summary::after{content:"+";position:absolute;right:16px;top:10px;font-size:24px;line-height:1;color:var(--lp-brown)}
+.lp-faq details[open] summary::after{content:"\2212"}
+.lp-faq .lp-ans{padding:0 16px 14px;color:var(--lp-muted)}
+/* form */
+.lp-form{background:#fff;border-radius:18px;padding:22px;border:1px solid rgba(31,77,58,.15);box-shadow:0 8px 24px rgba(31,77,58,.1)}
+.lp-field{margin-bottom:16px}
+.lp-field label,.lp-legend{display:block;font-weight:600;margin-bottom:6px;font-size:15px}
+.lp-field input[type=text],.lp-field input[type=tel],.lp-field select{width:100%;min-height:50px;padding:10px 12px;border:1.5px solid #b9c7bd;border-radius:10px;font:400 16px 'Poppins',Arial,sans-serif;background:#fff;color:var(--lp-text)}
+.lp-opt{display:flex;gap:12px;align-items:flex-start;padding:14px;border:2px solid #cfd9d2;border-radius:12px;margin-bottom:10px;cursor:pointer;min-height:56px}
+.lp-opt input{margin-top:5px;width:20px;height:20px;accent-color:var(--lp-green)}
+.lp-opt--best{border-color:var(--lp-gold);background:#FFFBEF}
+.lp-opt strong{display:block;color:var(--lp-green)}
+.lp-opt span{font-size:14px;color:var(--lp-muted)}
+.lp-thanks{display:none;text-align:center;padding:10px 0}
+.lp-form.lp-sent .lp-thanks{display:block}
+.lp-form.lp-sent .lp-formbody{display:none}
+/* footer */
+.lp-foot{background:#14352a;color:#dbe7df;padding:30px 0 96px;font-size:14px}
+.lp-foot a{color:#fff}
+.lp-foot p{margin:0 0 10px}
+/* sticky bar */
+.lp-sticky{position:fixed;left:0;right:0;bottom:0;z-index:9999;background:#fff;border-top:1px solid rgba(0,0,0,.12);box-shadow:0 -4px 16px rgba(0,0,0,.1);display:flex;gap:10px;padding:10px 12px}
+.lp-sticky .lp-btn{min-height:48px;padding:10px 14px;font-size:16px}
+.lp-sticky .lp-btn--primary{flex:1}
+.lp-sticky .lp-btn--wa{flex:0 0 52px;padding:0;width:52px}
+@media(min-width:760px){
+ .lp-root h1{font-size:44px}.lp-root h2{font-size:32px}
+ .lp-hero-grid{grid-template-columns:1.2fr .8fr}.lp-hero-img{max-width:360px}
+ .lp-btn-row{flex-direction:row}
+ .lp-two{grid-template-columns:1fr 1fr}
+ .lp-quotes{grid-template-columns:1fr 1fr}
+ .lp-packs{grid-template-columns:1fr 1fr;align-items:stretch}
+ .lp-sticky{display:none}.lp-foot{padding-bottom:30px}
+}
+</style>
+
+<div class="lp-root lp-test" id="lp-top">
+
+<div class="lp-testbar">MOCK / TEST PAGE. Items in [BRACKETS] are placeholders. Testimonials are samples, not real customers.</div>
+
+<!-- ============ HEADER ============ -->
+<div class="lp-head"><div class="lp-wrap">
+  <!-- IMAGE (optional): Criterion Herbaceuticals logo, ~300x80, transparent PNG. The repo's logo says "Holistic Wellness Home", so a text wordmark is used until the Herbaceuticals logo file is supplied. -->
+  <div class="lp-brand">CRITERION<small>HERBACEUTICALS</small></div>
+  <a class="lp-btn lp-btn--primary" href="#lp-order" data-lp-cta="header">Order now</a>
+</div></div>
+
+<!-- ============ 1. HERO ============ -->
+<section class="lp-hero"><div class="lp-wrap"><div class="lp-hero-grid">
+  <div>
+    <span class="lp-eyebrow">For people living with piles (haemorrhoids)</span>
+    <h1>Piles making every seat a battle? You don't have to carry it alone.</h1>
+    <p class="lp-lead"><strong>Pile Terminator Tea</strong> is a herbal tea made to help ease pain when passing stool, soothe itching and burning, and keep you comfortable when sitting, walking and working.</p>
+    <ul class="lp-chips">
+      <li>30 teabags, a month's pack</li>
+      <li>Pay on delivery <span class="lp-ph">[CONFIRM]</span></li>
+      <li>We reply to every message</li>
+    </ul>
+    <div class="lp-btn-row">
+      <a class="lp-btn lp-btn--primary" href="#lp-order" data-lp-cta="hero">Order Pile Terminator Tea</a>
+      <a class="lp-btn lp-btn--wa" href="#lp-order" data-lp-wa target="_blank" rel="noopener">Chat on WhatsApp first</a>
+    </div>
+  </div>
+  <!-- IMAGE: pack front, 485x720 (replace src with the systeme.io media URL) -->
+  <img class="lp-hero-img" src="images/pack-front.webp" width="485" height="720" alt="Pile Terminator Tea pack by Criterion Herbaceuticals, 30 teabags of 3 g each">
+</div></div></section>
+
+<!-- ============ 2. YOU ARE NOT ALONE ============ -->
+<section class="lp-sec"><div class="lp-wrap">
+  <h2>Nobody talks about piles. Everybody knows someone who has it.</h2>
+  <p>You smile at work, then shift in your seat. You hold it. You delay it. You hope the toilet can wait.</p>
+  <p>And you tell no one, because it is embarrassing.</p>
+  <p><strong>Piles are common. Silence is what makes them heavier.</strong> So let's say the word and talk about it plainly.</p>
+</div></section>
+
+<!-- ============ 3. SYMPTOM CHECK ============ -->
+<section class="lp-sec lp-sec--alt"><div class="lp-wrap">
+  <h2>Does this sound like your day?</h2>
+  <ul class="lp-checks lp-q">
+    <li>Dreading the toilet, or bracing yourself before you go</li>
+    <li>Every chair needs a plan: shifting, cushions, sitting on one side</li>
+    <li>Burning or itching that keeps coming back, especially at night</li>
+    <li>Swelling or irritation that makes sitting, walking and working hard</li>
+    <li>Too embarrassed to ask anyone, so you google it at 2 a.m.</li>
+    <li>Tried creams, tablets or herbs and still don't feel settled</li>
+  </ul>
+  <p><strong>If you said yes to even one, you are not alone, and you don't have to hide it.</strong></p>
+  <a class="lp-btn lp-btn--primary" href="#lp-order" data-lp-cta="symptoms">See the Pile Terminator Tea packs</a>
+</div></section>
+
+<!-- ============ 4. A LABEL YOU CAN READ ============ -->
+<section class="lp-sec"><div class="lp-wrap lp-two">
+  <div>
+    <h2>A label you can read</h2>
+    <p>Plenty of herbal sellers say a lot and show very little. We would rather show you what you are buying, who makes it and how to reach us.</p>
+    <table class="lp-table">
+      <tr><th>What it is</th><td>Pile Terminator Tea, herbal tea bags</td></tr>
+      <tr><th>How much</th><td>3 g per teabag, 30 teabags, 30 servings</td></tr>
+      <tr><th>Made by</th><td>Criterion Herbaceuticals</td></tr>
+      <tr><th>Call us</th><td><a href="tel:+2348164553746">+234 816 455 3746</a><br><a href="tel:+2349042689849">+234 904 268 9849</a></td></tr>
+      <tr><th>Batch and dates</th><td>Printed on every pack</td></tr>
+      <tr><th>NAFDAC No</th><td><span class="lp-ph">[TO BE ADDED]</span></td></tr>
+    </table>
+  </div>
+  <div>
+    <!-- IMAGE: pack back panel, 485x720 (replace src with the systeme.io media URL) -->
+    <img class="lp-pack-back" src="images/pack-back.webp" width="485" height="720" loading="lazy" alt="Back of the Pile Terminator Tea pack showing what it contains, benefits, how to use, storage and manufacturer details">
+    <p class="lp-small" style="text-align:center;margin-top:10px">The back of the pack. Read it before you buy.</p>
+  </div>
+</div></section>
+
+<!-- ============ 5. WHAT'S IN THE CUP ============ -->
+<section class="lp-sec lp-sec--alt"><div class="lp-wrap">
+  <h2>What's in the cup</h2>
+  <div class="lp-callout"><strong>Ingredients:</strong> <span class="lp-ph">[TO BE ADDED. List every herb by name, exactly as on the final label]</span><br>We will name every herb. No mystery powder.</div>
+  <h3>What it is made to do</h3>
+  <ul class="lp-checks">
+    <li>Made to help ease pain when passing stool</li>
+    <li>Made to help soothe itching and burning</li>
+    <li>Made to help reduce swelling and irritation</li>
+    <li>Helps you stay comfortable when sitting, walking and working</li>
+    <li>Helps you feel lighter and more at ease through the day</li>
+    <li>Supports smoother, easier bowel movements</li>
+  </ul>
+  <p class="lp-small">This is a herbal tea, not a drug. It is made to support daily comfort and is not a replacement for medical care.</p>
+</div></section>
+
+<!-- ============ 6. HOW TO USE ============ -->
+<section class="lp-sec"><div class="lp-wrap">
+  <h2>How to use it</h2>
+  <ol class="lp-steps">
+    <li>Put <strong>1 teabag</strong> in a kettle.</li>
+    <li>Add <strong>200 ml of water</strong> and boil for <strong>5 minutes</strong>.</li>
+    <li>Leave it to cool.</li>
+    <li>Drink it <span class="lp-ph">[CONFIRM: once a day, or morning and night]</span> before food.</li>
+  </ol>
+  <p>Store in a cool, dry place away from direct sunlight. One pack (30 teabags) is for one person.</p>
+  <!-- NOTE: the pack front says "Once a Day" but the pack back says "morning and night". Confirm and fix both here and on the pack. -->
+  <h3>What to expect, honestly</h3>
+  <p>Everyone is different, so we don't promise a timeline. We suggest using a full pack (30 days), and we will check in with you after the first week to ask how you are doing. Tell us what you notice.</p>
+</div></section>
+
+<!-- ============ 7. WHO IT IS FOR ============ -->
+<section class="lp-sec lp-sec--alt"><div class="lp-wrap">
+  <div class="lp-callout lp-callout--warn">
+    <h3>Message us first if...</h3>
+    <ul style="margin:0 0 10px;padding-left:20px">
+      <li>you are pregnant or breastfeeding</li>
+      <li>the tea is for a child</li>
+      <li>you take other medicines</li>
+      <li>you have heavy or ongoing bleeding</li>
+    </ul>
+    <p style="margin:0">Pile Terminator Tea is for adults living with piles. It is not a replacement for medical care, and we will never tell you to skip your doctor. <a data-lp-wa href="#lp-order" target="_blank" rel="noopener">Ask us on WhatsApp</a>.</p>
+  </div>
+</div></section>
+
+<!-- ============ 8. TESTIMONIALS (MOCK) ============ -->
+<section class="lp-sec"><div class="lp-wrap">
+  <h2>What customers say <span class="lp-mock-tag">MOCK</span></h2>
+  <div class="lp-quotes">
+    <!-- MOCK TESTIMONIAL: replace with real, consented testimonial before going live -->
+    <blockquote class="lp-quote"><p>"I drive all day, so I was not expecting much from tea. But the evenings feel a little easier on the seat now, and I like that I know exactly what I am drinking."</p><cite>Tunde A., Lagos <span class="lp-mock-tag">MOCK</span></cite></blockquote>
+    <!-- MOCK TESTIMONIAL: replace with real, consented testimonial before going live -->
+    <blockquote class="lp-quote"><p>"I was too shy to tell anyone. They replied to my message politely and explained everything. The itching bothers me less at night."</p><cite>Ngozi E., Enugu <span class="lp-mock-tag">MOCK</span></cite></blockquote>
+    <!-- MOCK TESTIMONIAL: replace with real, consented testimonial before going live -->
+    <blockquote class="lp-quote"><p>"I sit in the shop from morning till evening. I take it every day and I feel more comfortable when I sit. The delivery was discreet."</p><cite>Ibrahim S., Kano <span class="lp-mock-tag">MOCK</span></cite></blockquote>
+    <!-- MOCK TESTIMONIAL: replace with real, consented testimonial before going live -->
+    <blockquote class="lp-quote"><p>"I ordered for my father because he would never ask. Their team checked on him after one week. He says the toilet is not as stressful now."</p><cite>Amaka O., Abuja <span class="lp-mock-tag">MOCK</span></cite></blockquote>
+  </div>
+  <p class="lp-small" style="margin-top:12px">Everyone's experience is different.</p>
+</div></section>
+
+<!-- ============ 9. OFFER ============ -->
+<section class="lp-sec lp-sec--dark" id="lp-offer"><div class="lp-wrap">
+  <h2>Choose your pack</h2>
+  <p>Each pack is 30 teabags, a month for one person. Delivery to all 36 states and the FCT.</p>
+  <div class="lp-packs">
+    <div class="lp-pack">
+      <h3>1-month pack</h3>
+      <div class="lp-price">₦15,000</div>
+      <p class="lp-small" style="margin:4px 0 0">about ₦500 a day</p>
+      <ul><li>1 pack, 30 teabags</li><li>A full month to see how you feel</li></ul>
+      <a class="lp-btn lp-btn--primary lp-btn--block" href="#lp-order" data-lp-pick="1" data-lp-cta="pack1">Order 1 pack</a>
+    </div>
+    <div class="lp-pack lp-pack--best">
+      <span class="lp-badge">BEST VALUE</span>
+      <h3>3-month pack</h3>
+      <div class="lp-price">₦36,000</div>
+      <span class="lp-save">₦12,000 per pack. You save ₦9,000</span>
+      <p class="lp-small" style="margin:0">about ₦400 a day</p>
+      <ul><li>3 packs, 90 teabags</li><li>A steady routine for three months</li></ul>
+      <a class="lp-btn lp-btn--primary lp-btn--block" href="#lp-order" data-lp-pick="3" data-lp-cta="pack3">Order 3 packs</a>
+    </div>
+  </div>
+  <p class="lp-pack-note">Pay on delivery <span class="lp-ph">[CONFIRM]</span> &nbsp;|&nbsp; Delivery fee: <span class="lp-ph">[TO BE CONFIRMED]</span> &nbsp;|&nbsp; Delivery time: <span class="lp-ph">[TO BE CONFIRMED]</span></p>
+</div></section>
+
+<!-- ============ 10. PROMISE ============ -->
+<section class="lp-sec"><div class="lp-wrap">
+  <h2>Our promise to you</h2>
+  <ul class="lp-checks">
+    <li>We reply to every message, honestly and privately</li>
+    <li>We tell you if something is not right for you</li>
+    <li>We check in with you after your first week</li>
+    <li>Refund / support policy: <span class="lp-ph">[TO BE CONFIRMED]</span></li>
+  </ul>
+</div></section>
+
+<!-- ============ 11. FAQ ============ -->
+<section class="lp-sec lp-sec--alt lp-faq"><div class="lp-wrap">
+  <h2>Questions people ask</h2>
+  <details><summary>Tea, ke? Can tea really help?</summary><div class="lp-ans">We understand the doubt. Many people feel the same. Pile Terminator Tea is made to help ease discomfort and support daily comfort. It is not a miracle and not a cure. Try a full month and tell us what you notice.</div></details>
+  <details><summary>What is in it?</summary><div class="lp-ans"><span class="lp-ph">[INGREDIENTS: TO BE ADDED]</span> We will list every herb by name.</div></details>
+  <details><summary>How long before I feel something?</summary><div class="lp-ans">Everyone is different. We suggest using a full pack (30 days) and we will check in with you after the first week.</div></details>
+  <details><summary>Is it a cure?</summary><div class="lp-ans">No. It is a herbal tea made to help ease pain, itching and discomfort so you can sit, walk and work more comfortably. We do not promise a cure.</div></details>
+  <details><summary>Is it NAFDAC registered?</summary><div class="lp-ans">NAFDAC No: <span class="lp-ph">[TO BE ADDED]</span></div></details>
+  <details><summary>Can I use it if I am pregnant, breastfeeding or on other medicines?</summary><div class="lp-ans">Please message us first, and talk to your doctor or pharmacist. Do not stop any treatment without your doctor's advice.</div></details>
+  <details><summary>Does it taste bitter? Can I add sugar or honey?</summary><div class="lp-ans"><span class="lp-ph">[TO BE CONFIRMED]</span> Message us and we will advise.</div></details>
+  <details><summary>Do you deliver to my state? How do I pay?</summary><div class="lp-ans">We deliver to all 36 states and the FCT. Payment on delivery: <span class="lp-ph">[CONFIRM]</span>. Delivery fee and time: <span class="lp-ph">[TO BE CONFIRMED]</span>.</div></details>
+  <details><summary>What is the shelf life?</summary><div class="lp-ans">Two years from manufacture. The batch number and dates are printed on every pack.</div></details>
+  <div class="lp-callout lp-callout--warn" style="margin-top:20px">
+    <h3>When to see a doctor</h3>
+    <p style="margin:0">Please see a doctor if bleeding is heavy or keeps coming back, you feel dizzy or weak, the pain does not settle, or you are not sure it is piles. Not all bleeding is piles.</p>
+  </div>
+</div></section>
+
+<!-- ============ 12. ORDER FORM ============ -->
+<section class="lp-sec" id="lp-order"><div class="lp-wrap">
+  <h2>Place your order</h2>
+  <p>Fill in your details. We will call or message you to confirm before we send. Your parcel is packed privately.</p>
+  <!-- GO-LIVE: replace this whole form block with systeme.io's native form (see 07-systeme-setup-guide.md). -->
+  <form class="lp-form" id="lp-form" novalidate>
+    <div class="lp-formbody">
+      <fieldset style="border:0;padding:0;margin:0 0 6px">
+        <legend class="lp-legend">Choose your pack</legend>
+        <label class="lp-opt lp-opt--best"><input type="radio" name="package" value="3-month pack, N36,000" checked><div><strong>3-month pack: ₦36,000 <span style="color:#a77a00">(Best value)</span></strong><span>3 packs at ₦12,000 each. You save ₦9,000.</span></div></label>
+        <label class="lp-opt"><input type="radio" name="package" value="1-month pack, N15,000"><div><strong>1-month pack: ₦15,000</strong><span>1 pack, 30 teabags.</span></div></label>
+      </fieldset>
+      <div class="lp-field"><label for="lp-name">Full name</label><input id="lp-name" name="name" type="text" autocomplete="name" required></div>
+      <div class="lp-field"><label for="lp-phone">Phone number (WhatsApp if possible)</label><input id="lp-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 0803 000 0000" required></div>
+      <div class="lp-field"><label for="lp-state">State</label>
+        <select id="lp-state" name="state" required>
+          <option value="">Select your state</option>
+          <option>Abia</option><option>Adamawa</option><option>Akwa Ibom</option><option>Anambra</option><option>Bauchi</option><option>Bayelsa</option><option>Benue</option><option>Borno</option><option>Cross River</option><option>Delta</option><option>Ebonyi</option><option>Edo</option><option>Ekiti</option><option>Enugu</option><option>FCT (Abuja)</option><option>Gombe</option><option>Imo</option><option>Jigawa</option><option>Kaduna</option><option>Kano</option><option>Katsina</option><option>Kebbi</option><option>Kogi</option><option>Kwara</option><option>Lagos</option><option>Nasarawa</option><option>Niger</option><option>Ogun</option><option>Ondo</option><option>Osun</option><option>Oyo</option><option>Plateau</option><option>Rivers</option><option>Sokoto</option><option>Taraba</option><option>Yobe</option><option>Zamfara</option>
+        </select></div>
+      <div class="lp-field"><label for="lp-address">Delivery address (street, town)</label><input id="lp-address" name="address" type="text" autocomplete="street-address" required></div>
+      <!-- PIXEL: when the Meta Pixel is added in systeme.io (page Settings > Edit header code), fire the event on a successful submit, e.g. fbq('track','Lead'); with the native systeme.io form, fire it on the thank-you page instead. Do NOT paste a Pixel ID here. -->
+      <button class="lp-btn lp-btn--primary lp-btn--block" type="submit">Place my order</button>
+      <p class="lp-small" style="margin:12px 0 0">Pay on delivery <span class="lp-ph">[CONFIRM]</span>. Delivery fee and time: <span class="lp-ph">[TO BE CONFIRMED]</span>.</p>
+    </div>
+    <div class="lp-thanks" role="status" aria-live="polite">
+      <h3>Thank you<span id="lp-thanks-name"></span>.</h3>
+      <p>We will message you shortly to confirm your order. <span class="lp-mock-tag">MOCK: nothing was sent</span></p>
+      <a class="lp-btn lp-btn--wa" href="#lp-order" data-lp-wa target="_blank" rel="noopener">Chat with us on WhatsApp</a>
+    </div>
+  </form>
+  <p style="margin-top:16px">Prefer to talk first? <a data-lp-wa href="#lp-order" target="_blank" rel="noopener">Chat with us on WhatsApp</a> or call <a href="tel:+2348164553746">+234 816 455 3746</a>.</p>
+</div></section>
+
+<!-- ============ FOOTER ============ -->
+<div class="lp-foot"><div class="lp-wrap">
+  <p><strong>Criterion Herbaceuticals</strong><br>Tel: <a href="tel:+2348164553746">+234 816 455 3746</a>, <a href="tel:+2349042689849">+234 904 268 9849</a></p>
+  <p>NAFDAC No: <span class="lp-ph">[TO BE ADDED]</span><br>Batch CH592WH | MFD 18 Nov 2026 | EXP 17 Nov 2028 (as printed on the sample pack)</p>
+  <p>Disclaimer: Pile Terminator Tea is a herbal product and is not intended to diagnose, treat, cure or prevent any disease. Results vary from person to person. It is not a replacement for medical care. See a doctor for heavy or persistent bleeding.</p>
+</div></div>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="lp-sticky">
+  <a class="lp-btn lp-btn--primary" href="#lp-order" data-lp-cta="sticky">Order now</a>
+  <a class="lp-btn lp-btn--wa" data-lp-wa href="#lp-order" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.2.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ===== CONFIG: change the WhatsApp number HERE only (digits, with country code, no + or spaces) ===== */
+var LP_WHATSAPP = "2348000000000";   /* MOCK number +234 800 000 0000 */
+var LP_WA_TEXT  = "Hello Criterion Herbaceuticals, I would like to ask about Pile Terminator Tea.";
+(function(){
+  var root=document.getElementById('lp-top'); if(!root) return;
+  var wa="https://wa.me/"+LP_WHATSAPP+"?text="+encodeURIComponent(LP_WA_TEXT);
+  var links=root.querySelectorAll('[data-lp-wa]');
+  for(var i=0;i<links.length;i++){links[i].setAttribute('href',wa);}
+  /* pre-select the pack when a pack button is tapped */
+  var picks=root.querySelectorAll('[data-lp-pick]');
+  for(var j=0;j<picks.length;j++){picks[j].addEventListener('click',function(){
+    var v=this.getAttribute('data-lp-pick'),r=root.querySelectorAll('input[name=package]');
+    for(var k=0;k<r.length;k++){r[k].checked=(v==='3'&&r[k].value.indexOf('3-month')===0)||(v==='1'&&r[k].value.indexOf('1-month')===0);}
+  });}
+  /* mock form: shows the thank-you panel only. Nothing is sent. */
+  var f=document.getElementById('lp-form');
+  if(f){f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('lp-name'),p=document.getElementById('lp-phone'),s=document.getElementById('lp-state'),a=document.getElementById('lp-address');
+    if(!n.value.trim()||!p.value.trim()||!s.value||!a.value.trim()){
+      (!n.value.trim()?n:!p.value.trim()?p:!s.value?s:a).focus();
+      alert('Please fill in your name, phone number, state and address.');return;}
+    /* Lead/Purchase event would fire here once the Pixel is installed (see PIXEL comment above) */
+    var tn=document.getElementById('lp-thanks-name'); if(tn){tn.textContent=', '+n.value.trim().split(' ')[0];}
+    f.className+=' lp-sent'; f.scrollIntoView({behavior:'smooth',block:'center'});
+  });}
+})();
+</script>
+</div>
