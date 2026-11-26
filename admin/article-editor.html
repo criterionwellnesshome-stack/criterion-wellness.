@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Editor — Criterion Holistic Wellness Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="stylesheet" href="/css/admin.css">
+  <!-- Quill Editor Styling -->
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .editor-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .editor-main-card {
+      background: var(--admin-white);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--admin-radius-lg);
+      padding: 28px;
+      box-shadow: var(--admin-shadow);
+    }
+    .editor-sidebar-card {
+      background: var(--admin-white);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--admin-radius-lg);
+      padding: 24px;
+      box-shadow: var(--admin-shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ql-toolbar.ql-snow {
+      border-radius: 8px 8px 0 0;
+      border-color: var(--admin-border);
+      background: var(--admin-cream);
+      font-family: inherit;
+    }
+    .ql-container.ql-snow {
+      border-radius: 0 0 8px 8px;
+      border-color: var(--admin-border);
+      min-height: 420px;
+      font-size: 1.05rem;
+      font-family: inherit;
+    }
+    .slug-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .slug-prefix {
+      font-size: 0.85rem;
+      color: var(--admin-text-muted);
+      white-space: nowrap;
+    }
+    .cover-preview {
+      width: 100%;
+      height: 160px;
+      border-radius: 8px;
+      border: 1px dashed var(--admin-border);
+      background: var(--admin-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-top: 8px;
+      position: relative;
+    }
+    .cover-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .preview-modal-body {
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 30px;
+      background: #FBF9F5;
+    }
+    @media (max-width: 1020px) {
+      .editor-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="adminSidebar">
+      <div class="sidebar-header">
+        <a href="/admin/index.html" class="sidebar-brand">
+          <img src="/images/criterion-logo-horizontal.png" alt="Criterion Wellness">
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-title">Overview</div>
+        <a href="/admin/index.html" class="nav-item">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Dashboard</span>
+          </div>
+        </a>
+
+        <div class="nav-section-title" style="margin-top: 14px;">Content & Modules</div>
+        <a href="/admin/articles.html" class="nav-item active">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span>Articles</span>
+          </div>
+        </a>
+
+        <div class="nav-item disabled" title="Scheduled for Phase 3">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"></path><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path></svg>
+            <span>Resources</span>
+          </div>
+          <span class="badge badge-phase2">Phase 3</span>
+        </div>
+
+        <div class="nav-item disabled" title="Scheduled for Phase 3">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>Enquiries</span>
+          </div>
+          <span class="badge badge-phase2">Phase 3</span>
+        </div>
+
+        <div class="nav-section-title" style="margin-top: 14px;">Administration</div>
+        <a href="/admin/staff.html" class="nav-item">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            <span>Staff & Access</span>
+          </div>
+        </a>
+
+        <a href="/admin/settings.html" class="nav-item">
+          <div class="nav-item-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Settings</span>
+          </div>
+        </a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span>Criterion CMS v1.0</span>
+        <a href="/" target="_blank" style="color: var(--admin-cream); text-decoration: none;">View Site &nearr;</a>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="admin-main">
+      <header class="admin-topbar">
+        <div class="topbar-left">
+          <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle Sidebar">
+            ☰
+          </button>
+          <a href="/admin/articles.html" style="color: var(--admin-text-muted); text-decoration: none; font-size: 0.9rem; margin-right: 8px;">
+            &larr; Articles
+          </a>
+          <h1 class="topbar-title" id="editorPageTitle">New Article</h1>
+        </div>
+
+        <div class="topbar-right">
+          <span id="saveStatusIndicator" style="font-size: 0.8rem; color: var(--admin-text-muted);">
+            All changes saved
+          </span>
+          <button class="btn btn-secondary" id="previewArticleBtn" style="padding: 7px 14px; font-size: 0.85rem;">
+            👁️ Preview
+          </button>
+          <button class="btn btn-secondary" id="saveDraftBtn" style="padding: 7px 14px; font-size: 0.85rem;">
+            Save Draft
+          </button>
+          <button class="btn btn-primary" id="publishArticleBtn" style="padding: 7px 16px; font-size: 0.85rem;">
+            Publish
+          </button>
+        </div>
+      </header>
+
+      <main class="admin-content">
+        <div id="editorAlert"></div>
+
+        <div class="editor-layout">
+          <!-- Main Content Column -->
+          <div class="editor-main-card">
+            <div class="form-group">
+              <label for="articleTitle">Article Title</label>
+              <input type="text" id="articleTitle" class="form-control" placeholder="e.g. Natural Herbal Protocols for Hormonal Equilibrium" style="font-size: 1.25rem; font-weight: 600;" required>
+            </div>
+
+            <div class="form-group">
+              <label for="articleSlug">URL Slug</label>
+              <div class="slug-row">
+                <span class="slug-prefix">/blog/</span>
+                <input type="text" id="articleSlug" class="form-control" placeholder="natural-herbal-protocols" required>
+                <button type="button" class="btn btn-secondary" id="unlockSlugBtn" title="Edit URL slug manually" style="padding: 6px 12px; font-size: 0.8rem;">
+                  Unlock
+                </button>
+              </div>
+              <div id="slugWarningBanner" class="alert alert-warning" style="display: none; margin-top: 8px; font-size: 0.8rem;">
+                ⚠️ <strong>Warning:</strong> Changing the slug of an already published article will alter its URL. An automatic 301 redirect will be created from the previous slug.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="articleSummary">Summary / Excerpt (Card description)</label>
+              <textarea id="articleSummary" class="form-control" rows="3" placeholder="A concise 2-sentence summary introducing the article on blog card listings."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="margin-bottom: 8px;">Main Article Content</label>
+              <!-- Quill Editor Container -->
+              <div id="quillEditor"></div>
+            </div>
+          </div>
+
+          <!-- Sidebar Settings Column -->
+          <div class="editor-sidebar-card">
+            <!-- Publishing Status Info -->
+            <div style="padding-bottom: 14px; border-bottom: 1px solid var(--admin-border);">
+              <label style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--admin-text-muted); display: block; margin-bottom: 4px;">Status</label>
+              <div id="currentStatusBadge">
+                <span class="badge status-pill-draft" style="font-size: 0.82rem; padding: 4px 10px;">Draft</span>
+              </div>
+              <div id="publishedDateDisplay" style="font-size: 0.8rem; color: var(--admin-text-muted); margin-top: 6px;"></div>
+            </div>
+
+            <!-- Primary Category -->
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="articleCategory">Primary Category</label>
+              <select id="articleCategory" class="form-control" required>
+                <option value="">Select Category...</option>
+                <!-- Populated dynamically -->
+              </select>
+            </div>
+
+            <!-- Author Display Name -->
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="articleAuthor">Author Display Name</label>
+              <input type="text" id="articleAuthor" class="form-control" value="Criterion Holistic Wellness Home">
+            </div>
+
+            <!-- Cover Image -->
+            <div class="form-group" style="margin-bottom: 0;">
+              <label>Featured Cover Image</label>
+              <div class="cover-preview" id="coverImagePreview">
+                <span style="color: var(--admin-text-muted); font-size: 0.85rem;">No cover selected</span>
+              </div>
+              <input type="hidden" id="coverImageUrl">
+              <div style="display: flex; gap: 8px; margin-top: 8px;">
+                <button type="button" class="btn btn-secondary" id="selectMediaCoverBtn" style="flex: 1; padding: 6px; font-size: 0.8rem;">
+                  Choose Media
+                </button>
+                <button type="button" class="btn btn-secondary" id="removeCoverBtn" style="padding: 6px 10px; font-size: 0.8rem; display: none;">
+                  Remove
+                </button>
+              </div>
+              <div style="margin-top: 10px;">
+                <label for="coverImageAlt" style="font-size: 0.8rem;">Image Alt Text (Accessible description)</label>
+                <input type="text" id="coverImageAlt" class="form-control" placeholder="Describe the image content...">
+              </div>
+            </div>
+
+            <!-- SEO Settings -->
+            <div style="padding-top: 14px; border-top: 1px solid var(--admin-border);">
+              <label style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--admin-text-muted); display: block; margin-bottom: 10px;">SEO Metadata</label>
+              
+              <div class="form-group" style="margin-bottom: 12px;">
+                <label for="articleSeoTitle" style="font-size: 0.8rem;">SEO Title Tag</label>
+                <input type="text" id="articleSeoTitle" class="form-control" placeholder="Leave empty to use article title">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="articleSeoDesc" style="font-size: 0.8rem;">SEO Meta Description</label>
+                <textarea id="articleSeoDesc" class="form-control" rows="2" placeholder="Leave empty to use summary excerpt"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Article Preview Modal -->
+  <div class="modal-backdrop" id="previewModal">
+    <div class="modal-card" style="max-width: 900px;">
+      <div class="modal-header">
+        <h3>Live Article Preview</h3>
+        <button class="modal-close" id="closePreviewBtn">&times;</button>
+      </div>
+      <div class="preview-modal-body">
+        <div style="text-align: center; margin-bottom: 24px;">
+          <span class="badge badge-active" id="previewCategoryBadge" style="margin-bottom: 12px;">Wellness</span>
+          <h1 id="previewTitle" style="font-size: 2.2rem; color: #1F4D3A; margin: 10px 0;">Article Title</h1>
+          <div style="font-size: 0.88rem; color: #555;">
+            By <strong id="previewAuthor">Criterion Holistic Wellness Home</strong> • <span id="previewReadingTime">3 min read</span>
+          </div>
+        </div>
+        <div id="previewCoverWrap" style="margin-bottom: 28px; border-radius: 12px; overflow: hidden; max-height: 400px; display: none;">
+          <img id="previewCoverImg" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div id="previewContent" style="font-size: 1.05rem; line-height: 1.8; color: #222;"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="dismissPreviewBtn">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reusable Media Library Modal -->
+  <div class="modal-backdrop" id="editorMediaModal">
+    <div class="modal-card" style="max-width: 760px;">
+      <div class="modal-header">
+        <h3>Select Image from Media Library</h3>
+        <button class="modal-close" id="closeEditorMediaBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="editorMediaAlert"></div>
+
+        <!-- Upload Form -->
+        <form id="editorMediaUploadForm" style="display: flex; gap: 10px; margin-bottom: 18px; align-items: center; background: var(--admin-cream); padding: 14px; border-radius: 8px;">
+          <input type="file" id="editorMediaFileInput" accept="image/jpeg,image/png,image/webp" style="flex: 1; font-size: 0.85rem;" required>
+          <button type="submit" class="btn btn-primary" id="editorMediaUploadBtn" style="padding: 8px 16px;">Upload Image</button>
+        </form>
+
+        <!-- Media Grid -->
+        <div class="media-grid" id="editorMediaGrid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="dismissEditorMediaBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quill JS Core -->
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+  <script type="module" src="/js/admin/admin-shell.js"></script>
+  <script type="module" src="/js/admin/admin-article-editor.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Criterion Holistic Wellness Home in Ilorin, Kwara State. Reach out for clinical appointments, product guidance, or general enquiries.">
     <title>Contact Us | The Criterion Holistic Wellness Home</title>
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png?v=2">
@@ -10,15 +11,328 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png?v=2">
     <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
     <link rel="stylesheet" href="css/style.css?v=9.0">
+    <style>
+        .contact-hero {
+            background-color: var(--color-primary-dark);
+            color: var(--color-warm-white);
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        .contact-hero h1 {
+            color: var(--color-warm-white);
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .contact-hero p {
+            color: var(--color-cream);
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 48px;
+            padding: 60px 0 80px;
+            align-items: start;
+        }
+        @media (max-width: 850px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+        .clinic-info-card {
+            background: var(--color-warm-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            padding: 32px;
+        }
+        .clinic-info-card h2 {
+            font-size: 1.4rem;
+            color: var(--color-primary);
+            margin-bottom: 16px;
+        }
+        .info-item {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 24px;
+            align-items: flex-start;
+        }
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(79, 138, 91, 0.12);
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+        }
+        .info-text h3 {
+            font-size: 0.95rem;
+            color: var(--color-primary);
+            margin-bottom: 4px;
+        }
+        .info-text p, .info-text a {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+            text-decoration: none;
+        }
+        .info-text a:hover {
+            color: var(--color-accent);
+        }
+        .contact-form-card {
+            background: var(--color-warm-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-lg);
+            padding: 36px;
+            box-shadow: 0 4px 20px rgba(31, 77, 58, 0.04);
+        }
+        .contact-form-card h2 {
+            font-size: 1.4rem;
+            color: var(--color-primary);
+            margin-bottom: 8px;
+        }
+        .contact-form-card p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-bottom: 24px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-field-group {
+            margin-bottom: 18px;
+        }
+        .contact-field-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-text-main);
+            margin-bottom: 6px;
+        }
+        .contact-field-group input,
+        .contact-field-group select,
+        .contact-field-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-sm);
+            font-family: inherit;
+            font-size: 0.9rem;
+            background: var(--color-white);
+            color: var(--color-text-main);
+            transition: border-color 0.2s ease;
+        }
+        .contact-field-group input:focus,
+        .contact-field-group select:focus,
+        .contact-field-group textarea:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+        .radio-options-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+        .radio-option-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.88rem;
+            cursor: pointer;
+        }
+        .submission-success-card {
+            text-align: center;
+            padding: 36px 20px;
+        }
+        .success-circle-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(79, 138, 91, 0.15);
+            color: var(--color-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 16px;
+        }
+        .ref-box {
+            background: var(--color-cream);
+            border: 1px solid var(--color-border);
+            padding: 12px 18px;
+            border-radius: var(--border-radius-sm);
+            display: inline-block;
+            margin: 16px 0;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Injection point for Navigation -->
     <div id="nav-placeholder"></div>
 
-    <main class="page-section">
+    <header class="contact-hero">
         <div class="container">
-            <h1 class="page-title">Contact Us</h1>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem;">Get in touch via WhatsApp, email, phone, or find us on social media.</p>
+            <h1>We Are Here to Listen & Guide.</h1>
+            <p>Whether you have questions regarding our herbal formulations, wish to schedule an in-person clinic visit in Ilorin, or require remote guidance, our clinical team is accessible.</p>
+        </div>
+    </header>
+
+    <main class="page-section" style="background-color: var(--color-cream); padding: 0;">
+        <div class="container contact-container">
+            <!-- Left Column: Location & Hours -->
+            <div class="clinic-info-card">
+                <h2>The Criterion Wellness Home</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h3>Clinical Home & Dispensary</h3>
+                        <p>106 University Road, Tanke,<br>Ilorin, Kwara State, Nigeria.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                        <h3>Hotline & WhatsApp</h3>
+                        <p><a href="tel:+2347026233441">07026233441</a></p>
+                        <p><a href="https://wa.me/2349169467789" target="_blank" style="color: #25d366; font-weight: 600;">💬 WhatsApp: 09169467789</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                        <h3>Email Outreach</h3>
+                        <p><a href="mailto:support@criterionwellnesshome.com">support@criterionwellnesshome.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item" style="margin-bottom: 0;">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-text">
+                        <h3>Consultation Hours</h3>
+                        <p>Monday &ndash; Saturday: 9:00 AM &ndash; 5:00 PM<br>Sunday: Closed (Clinical Emergency Only)</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--color-border); font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+                    🌿 <em>Looking for a comprehensive fertility or reproductive health intake? Use our guided <a href="consultation.html" style="color: var(--color-primary); font-weight: 600;">Consultation Flow &rarr;</a></em>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive General Enquiry Form -->
+            <div class="contact-form-card">
+                <div id="contactFormContainer">
+                    <h2 id="formDisplayTitle">Send Us an Enquiry</h2>
+                    <p id="formDisplayDesc">Complete the form below and our clinical care coordinator will reach out to you promptly.</p>
+
+                    <form id="publicEnquiryForm">
+                        <input type="hidden" id="formVersionId" value="">
+
+                        <div class="form-row">
+                            <div class="contact-field-group">
+                                <label for="clientFullName">Full Name <span style="color: var(--color-accent);">*</span></label>
+                                <input type="text" id="clientFullName" name="full_name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="contact-field-group">
+                                <label for="clientPhone">Phone Number <span style="color: var(--color-accent);">*</span></label>
+                                <input type="tel" id="clientPhone" name="phone" placeholder="+234 800 000 0000" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="contact-field-group">
+                                <label for="clientEmail">Email Address <span style="font-weight: 400; color: var(--color-text-muted);">(Optional)</span></label>
+                                <input type="email" id="clientEmail" name="email" placeholder="you@example.com">
+                            </div>
+
+                            <div class="contact-field-group">
+                                <label for="enquirySubject">Topic / Concern</label>
+                                <select id="enquirySubject" name="enquiry_subject">
+                                    <option value="Product Availability & Ordering">Product Availability & Ordering</option>
+                                    <option value="Clinic Visit & Appointments">Clinic Visit & Appointments</option>
+                                    <option value="Educational Guides & Books">Educational Guides & Books</option>
+                                    <option value="Course Information">Course & Workshop Training</option>
+                                    <option value="General Health Question">General Health Question</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact-field-group">
+                            <label>Preferred Contact Method</label>
+                            <div class="radio-options-row">
+                                <label class="radio-option-item">
+                                    <input type="radio" name="preferred_contact_method" value="whatsapp" checked>
+                                    WhatsApp
+                                </label>
+                                <label class="radio-option-item">
+                                    <input type="radio" name="preferred_contact_method" value="phone">
+                                    Phone Call
+                                </label>
+                                <label class="radio-option-item">
+                                    <input type="radio" name="preferred_contact_method" value="email">
+                                    Email
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Questions Slot (If configured via Form Builder) -->
+                        <div id="dynamicQuestionsSlot"></div>
+
+                        <div class="contact-field-group">
+                            <label for="clientMessage">Your Message <span style="color: var(--color-accent);">*</span></label>
+                            <textarea id="clientMessage" name="message" rows="4" placeholder="How can our clinical team assist you?" required></textarea>
+                        </div>
+
+                        <button type="submit" id="btnSubmitEnquiry" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 0.95rem;">
+                            Submit Enquiry &rarr;
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Success Confirmation State -->
+                <div id="contactSuccessState" class="submission-success-card" style="display: none;">
+                    <div class="success-circle-icon">&check;</div>
+                    <h3 style="font-size: 1.35rem; color: var(--color-primary); margin-bottom: 8px;">Enquiry Received</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.92rem; line-height: 1.5;">
+                        Thank you for reaching out to The Criterion Holistic Wellness Home. Your message has been logged directly with our clinical intake desk.
+                    </p>
+                    
+                    <div class="ref-box" id="successReference">CRIT-ENQ-XXXX</div>
+
+                    <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 12px;">
+                        A care coordinator will review your request and get in touch with you via your preferred contact method shortly.
+                    </p>
+
+                    <div style="margin-top: 24px;">
+                        <button type="button" id="btnSubmitAnother" class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 18px;">
+                            Send Another Message
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -27,5 +341,132 @@
 
     <!-- Scripts -->
     <script src="js/components.js?v=5.0"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formContainer = document.getElementById('contactFormContainer');
+            const successState = document.getElementById('contactSuccessState');
+            const form = document.getElementById('publicEnquiryForm');
+            const btnSubmit = document.getElementById('btnSubmitEnquiry');
+            const formVersionInput = document.getElementById('formVersionId');
+            const formTitle = document.getElementById('formDisplayTitle');
+            const formDesc = document.getElementById('formDisplayDesc');
+            const dynamicSlot = document.getElementById('dynamicQuestionsSlot');
+            const successRef = document.getElementById('successReference');
+            const btnAnother = document.getElementById('btnSubmitAnother');
+
+            let customFields = [];
+
+            // Attempt to load active general form definition
+            async function loadActiveForm() {
+                try {
+                    const res = await fetch('/api/forms/general');
+                    if (res.ok) {
+                        const data = await res.json();
+                        formVersionInput.value = data.id;
+                        if (data.title) formTitle.textContent = data.title;
+                        if (data.description) formDesc.textContent = data.description;
+
+                        const fields = typeof data.fields_schema_json === 'string'
+                            ? JSON.parse(data.fields_schema_json)
+                            : (data.fields_schema_json || []);
+
+                        // Filter any custom fields that are not already in static form
+                        const standardIds = ['full_name', 'phone', 'email', 'preferred_contact_method', 'enquiry_subject', 'message'];
+                        customFields = fields.filter(f => !standardIds.includes(f.id));
+
+                        if (customFields.length > 0) {
+                            dynamicSlot.innerHTML = customFields.map(f => {
+                                let inputHtml = '';
+                                if (f.type === 'textarea') {
+                                    inputHtml = `<textarea name="custom_${f.id}" class="form-control" rows="2" placeholder="${f.placeholder || ''}" ${f.required ? 'required' : ''}></textarea>`;
+                                } else if (f.type === 'select' && Array.isArray(f.options)) {
+                                    const opts = f.options.map(o => `<option value="${o}">${o}</option>`).join('');
+                                    inputHtml = `<select name="custom_${f.id}" class="form-control" ${f.required ? 'required' : ''}>${opts}</select>`;
+                                } else {
+                                    inputHtml = `<input type="${f.type || 'text'}" name="custom_${f.id}" class="form-control" placeholder="${f.placeholder || ''}" ${f.required ? 'required' : ''}>`;
+                                }
+
+                                return `
+                                    <div class="contact-field-group">
+                                        <label>${f.label} ${f.required ? '<span style="color: var(--color-accent);">*</span>' : ''}</label>
+                                        ${inputHtml}
+                                    </div>
+                                `;
+                            }).join('');
+                        }
+                    }
+                } catch (err) {
+                    console.log('Using standard form schema fallback');
+                }
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                btnSubmit.disabled = true;
+                btnSubmit.textContent = 'Submitting Enquiry...';
+
+                const formData = new FormData(form);
+                const preferredMethod = formData.get('preferred_contact_method') || 'phone';
+                const subject = formData.get('enquiry_subject') || '';
+                const fullName = formData.get('full_name')?.trim();
+                const phone = formData.get('phone')?.trim();
+                const email = formData.get('email')?.trim() || null;
+                const message = formData.get('message')?.trim();
+
+                const additionalResponses = {
+                    subject: subject,
+                };
+
+                // Gather custom fields
+                customFields.forEach(f => {
+                    const val = formData.get(`custom_${f.id}`);
+                    if (val) additionalResponses[f.id] = val;
+                });
+
+                const payload = {
+                    full_name: fullName,
+                    phone: phone,
+                    email: email,
+                    enquiry_type: 'general',
+                    preferred_contact_method: preferredMethod,
+                    message: message,
+                    form_version_id: formVersionInput.value || null,
+                    additional_responses: additionalResponses,
+                };
+
+                try {
+                    const res = await fetch('/api/enquiries', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
+                    });
+
+                    const data = await res.json();
+                    if (!res.ok) {
+                        throw new Error(data.error || 'Failed to submit enquiry');
+                    }
+
+                    successRef.textContent = data.reference || 'CRIT-ENQ-RECEIVED';
+                    formContainer.style.display = 'none';
+                    successState.style.display = 'block';
+                    window.scrollTo({ top: 100, behavior: 'smooth' });
+                } catch (err) {
+                    alert(err.message);
+                    btnSubmit.disabled = false;
+                    btnSubmit.textContent = 'Submit Enquiry →';
+                }
+            });
+
+            btnAnother?.addEventListener('click', () => {
+                form.reset();
+                btnSubmit.disabled = false;
+                btnSubmit.textContent = 'Submit Enquiry →';
+                successState.style.display = 'none';
+                formContainer.style.display = 'block';
+            });
+
+            loadActiveForm();
+        });
+    </script>
 </body>
 </html>

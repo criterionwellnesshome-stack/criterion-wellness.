@@ -611,10 +611,50 @@ function renderStep5(root) {
         renderCurrentStep();
     });
 
-    document.getElementById('btn-submit-consult').addEventListener('click', () => {
+    document.getElementById('btn-submit-consult').addEventListener('click', async () => {
+        const submitBtn = document.getElementById('btn-submit-consult');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Submitting Request... <span class="spinner-small"></span>';
+
+        const preferredMethod = consultState.method === 'online' ? 'whatsapp' : 'phone';
+
+        const payload = {
+            full_name: consultState.fullName,
+            phone: consultState.phone,
+            email: consultState.email || null,
+            enquiry_type: 'consultation',
+            preferred_contact_method: preferredMethod,
+            consultation_area: concernObj.title,
+            message: consultState.message,
+            additional_responses: {
+                consultation_method: consultState.method === 'online' ? 'Online' : 'In-Person (Ilorin)',
+                document_attached: consultState.documentMeta ? consultState.documentMeta.name : null,
+                document_size: consultState.documentMeta ? consultState.documentMeta.sizeFormatted : null
+            }
+        };
+
+        let generatedRef = 'CRIT-CNS-' + Math.floor(100000 + Math.random() * 900000);
+
+        try {
+            const res = await fetch('/api/enquiries', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                if (data.reference) {
+                    generatedRef = data.reference;
+                }
+            }
+        } catch (err) {
+            console.warn('Network submission fallback to offline reference:', err);
+        }
+
         // Compile Consultation Representation Object
         const consultSubmission = {
-            requestId: 'CRIT-CNS-' + Math.floor(100000 + Math.random() * 900000),
+            requestId: generatedRef,
             concern: concernObj.title,
             client: {
                 fullName: consultState.fullName,
@@ -627,7 +667,7 @@ function renderStep5(root) {
                 fileName: consultState.documentMeta.name,
                 fileSize: consultState.documentMeta.sizeFormatted
             } : { attached: false },
-            consultationMethod: consultState.method === 'online' ? 'Online' : 'In-Person',
+            consultationMethod: consultState.method === 'online' ? 'Online' : 'In-Person (Ilorin Clinic)',
             status: 'REQUEST_RECEIVED',
             createdAt: new Date().toISOString()
         };

@@ -282,9 +282,7 @@ const CRITERION_PRODUCTS = {
         availability: "In Stock",
         purchaseType: "DIRECT_PURCHASE",
         images: [
-            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?auto=format&fit=crop&w=800&q=80",
-            "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=800&q=80"
+            "images/product-hepato-guard.png"
         ],
         shortDescription: "Targeted hepatic support formula engineered to support healthy liver function, cellular detoxification, and hormone metabolism.",
         fullDescription: "Criterion Life Hepato-Guard is a specialized liver wellness support formula. The liver plays a primary role in metabolizing hormones, eliminating environmental xenoestrogens, and clearing circulating metabolic waste. This synergistic blend supports Phase 1 and Phase 2 hepatic pathways.",

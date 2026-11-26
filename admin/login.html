@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Sign In — Criterion Holistic Wellness Home</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="login-header">
+      <img src="/images/criterion-logo-horizontal.png" alt="Criterion Holistic Wellness Home">
+      <h1>Administrative Portal</h1>
+      <p>Authorized staff authentication</p>
+    </div>
+
+    <div id="alertContainer"></div>
+
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Staff Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          class="form-control" 
+          placeholder="staff@criterionwellnesshome.com" 
+          required 
+          autocomplete="username"
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          class="form-control" 
+          placeholder="••••••••••••" 
+          required 
+          autocomplete="current-password"
+        >
+      </div>
+
+      <button type="submit" id="submitBtn" class="btn btn-primary btn-block">
+        Sign In
+      </button>
+    </form>
+
+    <div class="recovery-notice">
+      <strong>Password Recovery Notice</strong><br>
+      Self-service password recovery is currently pending transactional email service configuration. If you require credentials or a password reset, please contact your system administrator.
+    </div>
+  </main>
+
+  <script type="module" src="/js/admin/admin-auth.js"></script>
+</body>
+</html>
