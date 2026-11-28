@@ -6,8 +6,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "criterion-wellness-db",
-      "database_id": "criterion-wellness-db"
+      "database_name": "criterion-herbal-store-staging",
+      "database_id": "c34741aa-1402-429c-b2b4-cde107b6bcd4"
     }
   ],
   "r2_buckets": [
